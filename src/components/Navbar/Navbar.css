@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+  
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+.nav-item {
+    margin: 10px;
+    list-style-type: none;
+}
+  
+.nav-link {
+    text-decoration: none;
+    font-family: "Oswald", serif; 
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-transform: uppercase;
+    color:black;
+}
+  
+.nav-link:hover {
+    color: rgb(255, 0, 64);
+}

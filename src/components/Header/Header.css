@@ -1,0 +1,19 @@
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+.header-title {
+    font-family: Pattaya;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+  
+.header-link {
+    text-decoration: none;
+}
