@@ -1,0 +1,94 @@
+.home-page {
+    display: flex;
+    flex-direction: row;
+    /* font-family: 'Trebuchet MS', sans-serif; */
+}
+
+.home-left-section {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    padding: 1em 3em;
+}
+
+.home-right-section {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    border-left: 1px solid black;
+    padding: 1em;
+}
+
+.home-new {
+    background-color: rgb(227, 11, 92);
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    font-family: "Oswald", serif;
+}
+
+.home-card-button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 5px;
+}
+
+.home-card-fake-button, .home-more-button {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 10px;
+    text-decoration: none;
+    outline: 2px solid rgb(227, 11, 92);
+    border-radius: 7px;
+    background-color: whitesmoke;
+    color: rgb(227, 11, 92);
+}
+
+.home-card-fake-button {
+    width: 100px;
+}
+
+.home-more-button {
+    width: 150px;
+}
+
+.home-card-fake-button:hover, .home-more-button:hover {
+    background-color: rgb(227, 11, 92);
+    font-weight: bold;
+    color: white;
+}
+
+.home-link {
+    text-decoration: none;
+    color: black;
+}
+
+.left-wrapper {
+    border-top: 1px solid black;
+    padding-top: 20px;
+}
+
+.home-more-button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 5px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.word-wrapper {
+    display: flex;
+    flex-direction: column; 
+    padding: 10px 0;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.word {
+    margin-bottom: 10px;
+}

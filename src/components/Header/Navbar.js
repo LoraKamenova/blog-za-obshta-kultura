@@ -13,9 +13,9 @@ const Navbar = () => {
             <li className='nav-item'>
                 <NavLink className='nav-link' to="/articles">Статии</NavLink>
             </li>
-            <li className='nav-item'>
+            {/* <li className='nav-item'>
                 <NavLink className='nav-link' to="/series">Поредици</NavLink>
-            </li>
+            </li> */}
             {/* <li className='nav-item dropdown'>Поредици<i className='fa fa-caret-down'></i>
                 <div className='dropdown-content'>
                     <NavLink activeclassName="active" className='nav-link drop' to="/articles/architecture"><div className='div-list-item'>Архитектурa</div></NavLink>
@@ -29,13 +29,13 @@ const Navbar = () => {
                 </div>
             </li> */}
             <li className='nav-item'>
-                <NavLink className='nav-link' to="/recipes">Рецепти</NavLink>
+                <NavLink className='nav-link' to="/words">Дума на деня</NavLink>
             </li>
             <li className='nav-item'>
                 <NavLink className='nav-link' to="/books">Читателски дневник</NavLink>
             </li>
             <li className='nav-item'>
-                <NavLink className='nav-link' to="/word">Дума на деня</NavLink>
+                <NavLink className='nav-link' to="/recipes">Рецепти</NavLink>
             </li>
             <li className='nav-item'>
                 <NavLink className='nav-link' to="/diy">Направи си сам</NavLink>

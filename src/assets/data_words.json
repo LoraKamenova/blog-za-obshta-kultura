@@ -1,0 +1,20 @@
+[
+    {
+    "_id": 1,
+    "word": "Дерогация",
+    "description": "Дерогация е правно понятие, означаващо частична отмяна на определен закон.",
+    "comment": "В смисъла за Лукойл е позволяване на внасяне на руски нефт"
+  },
+  {
+    "_id": 2,
+    "word": "Дерогация2",
+    "description": "Lorem Ipsum2",
+    "comment": "Lorem Ipsum2"
+  },
+  {
+    "_id": 3,
+    "word": "Дерогация3",
+    "description": "Lorem Ipsum3",
+    "comment": "Lorem Ipsum3"
+  }
+]

@@ -1,11 +1,21 @@
+.header-navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
 .header-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     padding: 10px;
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; */
 }
 .header-title {
     font-family: Pattaya;
