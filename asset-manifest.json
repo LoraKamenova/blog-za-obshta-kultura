@@ -1,17 +1,25 @@
 {
   "files": {
-    "main.css": "/blog-za-obshta-kultura/static/css/main.4a4f537a.css",
-    "main.js": "/blog-za-obshta-kultura/static/js/main.0a803a0c.js",
+    "main.css": "/blog-za-obshta-kultura/static/css/main.785938cc.css",
+    "main.js": "/blog-za-obshta-kultura/static/js/main.396d1afa.js",
     "static/js/453.4340bb01.chunk.js": "/blog-za-obshta-kultura/static/js/453.4340bb01.chunk.js",
+    "static/js/304.105df18b.chunk.js": "/blog-za-obshta-kultura/static/js/304.105df18b.chunk.js",
+    "static/js/381.71d5e80d.chunk.js": "/blog-za-obshta-kultura/static/js/381.71d5e80d.chunk.js",
+    "static/js/606.f5d70120.chunk.js": "/blog-za-obshta-kultura/static/js/606.f5d70120.chunk.js",
+    "static/js/899.10e5e278.chunk.js": "/blog-za-obshta-kultura/static/js/899.10e5e278.chunk.js",
     "static/media/Pattaya-Regular.ttf": "/blog-za-obshta-kultura/static/media/Pattaya-Regular.5f92ed08a11ef96a5f41.ttf",
     "static/media/Oswald-Regular.ttf": "/blog-za-obshta-kultura/static/media/Oswald-Regular.31bce04a1ae8549b1464.ttf",
+    "static/media/1.md": "/blog-za-obshta-kultura/static/media/1.6a94058d6d3e775e3e21.md",
+    "static/media/3.md": "/blog-za-obshta-kultura/static/media/3.463f1edb3f3beae912c7.md",
+    "static/media/2.md": "/blog-za-obshta-kultura/static/media/2.fc554c51922d5e37d3a7.md",
+    "static/media/4.md": "/blog-za-obshta-kultura/static/media/4.be37ee0e86220537e79f.md",
     "index.html": "/blog-za-obshta-kultura/index.html",
-    "main.4a4f537a.css.map": "/blog-za-obshta-kultura/static/css/main.4a4f537a.css.map",
-    "main.0a803a0c.js.map": "/blog-za-obshta-kultura/static/js/main.0a803a0c.js.map",
+    "main.785938cc.css.map": "/blog-za-obshta-kultura/static/css/main.785938cc.css.map",
+    "main.396d1afa.js.map": "/blog-za-obshta-kultura/static/js/main.396d1afa.js.map",
     "453.4340bb01.chunk.js.map": "/blog-za-obshta-kultura/static/js/453.4340bb01.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a4f537a.css",
-    "static/js/main.0a803a0c.js"
+    "static/css/main.785938cc.css",
+    "static/js/main.396d1afa.js"
   ]
 }
