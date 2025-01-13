@@ -17,8 +17,8 @@ async componentWillMount() {
 
   render() {
     return (
-      <div className="article-section">
-        <ReactMarkdown className="markdown" children={this.state.terms} />
+      <div className="home-article-section">
+        <ReactMarkdown className="markdown-home" children={this.state.terms} />
       </div>
     )
   }

@@ -9,8 +9,7 @@ class Article extends Component {
   }
 
 async componentWillMount() {
-    // const file = await import(`../../assets/posts/${this.props.id}.md`);
-    const file = await import(`../../assets/posts/1.md`);
+    const file = await import(`../../assets/posts/${this.props.id}.md`);
     const response = await fetch(file.default);
     const text = await response.text();
     this.setState({ terms: text })
@@ -18,8 +17,10 @@ async componentWillMount() {
 
   render() {
     return (
-      <div className="article-section">
-        <ReactMarkdown className="markdown" children={this.state.terms} />
+      <div className='article-section'>
+        <div className="article">
+          <ReactMarkdown className="markdown" children={this.state.terms} />
+        </div>
       </div>
     )
   }

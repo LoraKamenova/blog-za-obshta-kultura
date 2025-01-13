@@ -1,4 +1,4 @@
-.article-section {
+.home-article-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,7 +7,7 @@
     font-family: 'Trebuchet MS', sans-serif;
 }
 
-.markdown {
+.markdown-home {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,14 +17,14 @@
     color: black;
 }
 
-.markdown h1 {
+.markdown-home h1 {
     margin-bottom: 20px;
     font-size: 3em;
     font-style: italic;
     text-align: center;
 }
 
-.markdown p {
+.markdown-home p {
     margin: 5px;
     display: flex;
     flex-direction: row;
@@ -32,13 +32,13 @@
     text-align: justify;
 }
 
-.markdown p:first-of-type{
+.markdown-home p:first-of-type{
      font-style: italic;
      text-align: center;
      /* font-weight: bold; */
   }
 
-.markdown img {
+.markdown-home img {
     max-width: 70%;
     height: auto;
     overflow: hidden;
@@ -56,7 +56,7 @@ img[alt="long"] {
     align-self: center;
 }
 
-.markdown h3 {
+.markdown-home h3 {
     font-style: italic;
     align-self: flex-start;
     margin-left: 5px;
