@@ -8,10 +8,10 @@ const Navbar = () => {
 <nav className="navbar">
         <ul className='nav-list'>
             <li className='nav-item'>
-                <NavLink className='nav-link' to="/">Начало</NavLink>
+                <NavLink activeclassName="active" className='nav-link' to="/">Начало</NavLink>
             </li>
             <li className='nav-item'>
-                <NavLink className='nav-link' to="/articles">Статии</NavLink>
+                <NavLink activeclassName="active" className='nav-link' to="/articles">Статии</NavLink>
             </li>
             {/* <li className='nav-item'>
                 <NavLink className='nav-link' to="/series">Поредици</NavLink>
@@ -29,19 +29,19 @@ const Navbar = () => {
                 </div>
             </li> */}
             <li className='nav-item'>
-                <NavLink className='nav-link' to="/words">Дума на деня</NavLink>
+                <NavLink activeclassName="active" className='nav-link' to="/words">Дума на деня</NavLink>
             </li>
             <li className='nav-item'>
-                <NavLink className='nav-link' to="/books">Читателски дневник</NavLink>
+                <NavLink activeclassName="active" className='nav-link' to="/books">Читателски дневник</NavLink>
             </li>
             <li className='nav-item'>
-                <NavLink className='nav-link' to="/recipes">Рецепти</NavLink>
+                <NavLink activeclassName="active" className='nav-link' to="/recipes">Рецепти</NavLink>
             </li>
             <li className='nav-item'>
-                <NavLink className='nav-link' to="/diy">Направи си сам</NavLink>
+                <NavLink activeclassName="active" className='nav-link' to="/diy">Направи си сам</NavLink>
             </li>
             <li className='nav-item'>
-                <NavLink className='nav-link' to="/about">За блога</NavLink>
+                <NavLink activeclassName="active" className='nav-link' to="/about">За блога</NavLink>
             </li>
         </ul>
 </nav>

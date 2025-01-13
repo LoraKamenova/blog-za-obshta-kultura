@@ -33,3 +33,8 @@
 .nav-link:hover {
     color: rgb(227, 11, 92);
 }
+
+
+.active {
+    color: rgb(227, 11, 92);
+}

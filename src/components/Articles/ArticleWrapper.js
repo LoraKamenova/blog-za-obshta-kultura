@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import Article from '../Article/Article';
+import Article from './Article';
 
 const ArticleWrapper = () => {
     const { id } = useParams()

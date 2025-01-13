@@ -1,26 +1,24 @@
 import { React, Component } from 'react';
+import { Link } from "react-router-dom";
+import HomeArticle from './HomeArticle';
+import HomeCard from './HomeCard';
 import data from '../../assets/data.json';
 import words from '../../assets/data_words.json';
-import HomeArticle from './HomeArticle';
-import { Link } from "react-router-dom";
 import './Home.css';
-import HomeCard from './HomeCard';
 
 class Home extends Component {
 
     render() {
-        let reversedData = data.reverse();
-        let reversedWords = words.reverse();
-        // let posts = reversedData.filter(temp => temp.subcategory.includes(searchedValue)).map(({_id, title, url, content}) => ({_id, title, url, content}));
-        // let articles = reversedData.filter(temp => temp.category.includes("Статия")).map(({_id, title, url, content}) => ({_id, title, url, content}));
-        let articles = reversedData.filter(temp => temp.category.includes("Статии")).map(({_id }) => ({_id }));
-        let recipes = reversedData.filter(temp => temp.category.includes("Рецепти")).map(({_id, title, date, url, content}) => ({_id, title, date, url, content}));
-        let books = reversedData.filter(temp => temp.category.includes("Книги")).map(({_id, title, date, url, content}) => ({_id, title, date, url, content}));
-        let diy = reversedData.filter(temp => temp.category.includes("DIY")).map(({_id, title, date, url, content}) => ({_id, title, date, url, content}));
+       
+        let articles = data.filter(temp => temp.category.includes("Статии")).map(({_id }) => ({_id }));
+        let recipes = data.filter(temp => temp.category.includes("Рецепти")).map(({_id, title, date, url, content}) => ({_id, title, date, url, content}));
+        let books = data.filter(temp => temp.category.includes("Книги")).map(({_id, title, date, url, content}) => ({_id, title, date, url, content}));
+        let diy = data.filter(temp => temp.category.includes("DIY")).map(({_id, title, date, url, content}) => ({_id, title, date, url, content}));
 
-        const word = reversedWords[reversedWords.length - 1];
+        const word = words[words.length - 1];
         const articleId = articles[articles.length - 1]._id;
         const recipe = recipes[recipes.length - 1];
+        // console.log(recipe._id);
         const book = books[books.length - 1];
         const DIY = diy[diy.length - 1];
 

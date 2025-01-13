@@ -1,14 +1,20 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-
-import Navbar from './components/Header/Navbar';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
-import Series from './components/Series/Series';
-
+import AllArticles from './components/Articles/AllArticles';
+import ArticleWrapper from './components/Articles/ArticleWrapper';
+import Atlas from './components/Articles/Series/Atlas';
+import Architecture from './components/Articles/Series/Architecture';
+import How from './components/Articles/Series/How';
+import Stories from './components/Articles/Series/Stories';
+import BusinessStories from './components/Articles/Series/BusinessStories';
+import FoodStories from './components/Articles/Series/FoodStories';
+import Garden from './components/Articles/Series/Garden';
+import Games from './components/Articles/Series/Games';
 
 import './App.css';
-import ArticleWrapper from './components/Article/ArticleWrapper';
+
 
 function App() {
   return (
@@ -16,22 +22,24 @@ function App() {
      <Header></Header>
      <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/articles" element={<Series/>}/>
+        <Route path="/articles" element={<AllArticles/>}/>
         <Route path="/articles/:id" element={<ArticleWrapper/>}/>
-        <Route path="/articles/atlas" element={<ArticleWrapper/>}/>
-        <Route path="/articles/architecture" element={<ArticleWrapper/>}/>
-        <Route path="/articles/how-it-is-made" element={<ArticleWrapper/>}/>
-        <Route path="/articles/stories" element={<ArticleWrapper/>}/>
-        <Route path="/articles/business-stories" element={<ArticleWrapper/>}/>
-        <Route path="/articles/food-stories" element={<ArticleWrapper/>}/>
-        <Route path="/words" element={<Series/>}/>
-        <Route path="/recipies" element={<Series/>}/>
-        <Route path="/recipies/:id" element={<Series/>}/>
-        <Route path="/books" element={<Series/>}/>
-        <Route path="/books/:id" element={<Series/>}/>
-        <Route path="/diy" element={<Series/>}/>
-        <Route path="/diy/:id" element={<Series/>}/>
-        <Route path="/about" element={<Series/>}/>
+        <Route path="/articles/atlas" element={<Atlas/>}/>
+        <Route path="/articles/architecture" element={<Architecture/>}/>
+        <Route path="/articles/how" element={<How/>}/>
+        <Route path="/articles/stories" element={<Stories/>}/>
+        <Route path="/articles/business-stories" element={<BusinessStories/>}/>
+        <Route path="/articles/food-stories" element={<FoodStories/>}/>
+        <Route path="/articles/garden" element={<Garden/>}/>
+        <Route path="/articles/games" element={<Games/>}/>
+        <Route path="/words" element={<Home/>}/>
+        <Route path="/recipies" element={<Home/>}/>
+        <Route path="/recipies/:id" element={<Home/>}/>
+        <Route path="/books" element={<Home/>}/>
+        <Route path="/books/:id" element={<Home/>}/>
+        <Route path="/diy" element={<Home/>}/>
+        <Route path="/diy/:id" element={<Home/>}/>
+        <Route path="/about" element={<Home/>}/>
      </Routes>
     </div>
   );

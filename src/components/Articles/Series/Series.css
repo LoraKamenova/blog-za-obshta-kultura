@@ -1,15 +1,11 @@
-.series-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .series-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
     flex-wrap: wrap;
-    width: 40%;
-    margin-top: 50px;
+    width: 100%;
+    margin-top: 1em;
     /* border: 1px solid red; */
 }
 
@@ -21,17 +17,19 @@
 }
 
 .fas {
-    font-size: 4em;
+    font-size: 2em;
 }
 
 .series-heading {
     text-align: center;
     padding: 10px;
+    font-size: 15px;
+    text-wrap: wrap;
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
 .series-link {
     display: flex;
-    width: 25%;
     padding: 10px;
     flex-direction: column;
     justify-content: center;
@@ -41,5 +39,5 @@
 }
 
 .series-link:hover {
-    color: rgb(255, 0, 64);;
+    color: rgb(227, 11, 92);;
 }
