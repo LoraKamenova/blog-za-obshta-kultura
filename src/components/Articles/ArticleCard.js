@@ -7,10 +7,10 @@ const ArticleCard = (props) => {
             <div className="article-card-image-wrapper">
                 <img className="article-card-image" src={props.url} alt=""/>
             </div>
-            <div className="article-card-content-wrapper">
-                <div className="article-card-date-wrapper">
-                    <p className="article-card-date"><span className='article-subcategory-span'>{props.subcategory}</span></p>
+            <div className="article-card-subcategory-wrapper">
+                    <p className="article-card-subcategory"><span className='article-subcategory-span'>{props.subcategory}</span></p>
                 </div>
+            <div className="article-card-content-wrapper">
                 <div className="article-card-date-wrapper">
                     <p className="article-card-date">{props.date}</p>
                 </div>
