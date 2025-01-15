@@ -4,16 +4,16 @@ import data from '../../../assets/data.json';
 import ArticleCard from '../ArticleCard';
 import '../AllArticles.css';
 
-class FoodStories extends Component {
+class World extends Component {
 
     render() {
 
         let reversedData = data.reverse();
-        let articles = reversedData.filter(temp => temp.subcategory.includes("Кулинарни класики")).map(({_id, title, url, subcategory, content, date}) => ({_id, title, url, subcategory, content, date}));
+        let articles = reversedData.filter(temp => temp.subcategory.includes("Места по света")).map(({_id, title, url, subcategory, content, date}) => ({_id, title, url, subcategory, content, date}));
     
         return (
             <section className="all-articles-page">
-                <h1 className='all-articles-heading'>Поредица "Кулинарни класики"</h1>
+                <h1 className='all-articles-heading'>Поредица "Места по света"</h1>
                 <div className='all-articles-container'>
                     {articles.map((x) => (
                         <Link className='all-articles-link' key={x._id} {...x} to={`/articles/${x._id}`}>
@@ -31,4 +31,4 @@ class FoodStories extends Component {
         )
     }
 }
-export default FoodStories;
+export default World;

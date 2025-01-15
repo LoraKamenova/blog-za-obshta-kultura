@@ -43,7 +43,7 @@ class Series extends Component {
                     </div>
                 </div>
             </Link>
-            <Link className='series-link' to={`/articles/game`}>
+            <Link className='series-link' to={`/articles/sports`}>
                 <div className='series-item'>
                     <div className='series-icon-wrapper'><i class="fas fa-table-tennis"></i></div>
                     <div className='series-heading'>
