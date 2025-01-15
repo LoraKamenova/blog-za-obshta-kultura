@@ -75,7 +75,7 @@ class Series extends Component {
                     <div className='series-icon-wrapper'><i class="fas fa-pizza-slice"></i></div>
                     <div className='series-heading'>
                         <p>Кулинарни</p>
-                        <p>истории</p>
+                        <p>класики</p>
                     </div>
                 </div>
             </Link>

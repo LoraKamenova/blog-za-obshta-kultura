@@ -18,7 +18,7 @@ const ArticleCard = (props) => {
                     <h3 className="article-card-title">{props.title}</h3>
                 </div>
                 <div className="article-card-text-wrapper">
-                    <p className="article-card-text">{props.content.substring(0, 150) + "..."}</p>
+                    <p className="article-card-text">{props.content.substring(0, 130) + "..."}</p>
                 </div>
                 <div className="article-card-button-wrapper">
                     <div className="article-card-fake-button">Прочети &gt;&gt;</div>
