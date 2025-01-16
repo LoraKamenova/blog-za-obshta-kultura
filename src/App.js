@@ -34,6 +34,11 @@ import Bio from './components/Books/BookSeries/Bio';
 import Guides from './components/Books/BookSeries/Guides';
 import Sofia from './components/Books/BookSeries/Sofia';
 
+import AllCrafts from './components/Crafts/AllCrafts';
+import CraftWrapper from './components/Crafts/CraftWrapper';
+
+import Words from './components/Words/Words';
+
 import './App.css';
 
 function App() {
@@ -53,7 +58,7 @@ function App() {
         <Route path="/articles/garden" element={<Garden/>}/>
         <Route path="/articles/sports" element={<Sports/>}/>
         <Route path="/articles/other" element={<Other/>}/>
-        <Route path="/words" element={<Home/>}/>
+        <Route path="/words" element={<Words/>}/>
         <Route path="/recipes" element={<AllRecipes/>}/>
         <Route path="/recipes/:id" element={<RecipeWrapper/>}/>
         <Route path="/recipes/salads" element={<Salads/>}/>
@@ -70,8 +75,8 @@ function App() {
         <Route path="/books/bio" element={<Bio/>}/>
         <Route path="/books/guides" element={<Guides/>}/>
         <Route path="/books/sofia" element={<Sofia/>}/>
-        <Route path="/diy" element={<Home/>}/>
-        <Route path="/diy/:id" element={<Home/>}/>
+        <Route path="/crafts" element={<AllCrafts/>}/>
+        <Route path="/crafts/:id" element={<CraftWrapper/>}/>
         <Route path="/about" element={<Home/>}/>
      </Routes>
     </div>

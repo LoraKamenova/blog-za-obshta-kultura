@@ -38,7 +38,7 @@ const Navbar = () => {
                 <NavLink activeclassName="active" className='nav-link' to="/recipes">Рецепти</NavLink>
             </li>
             <li className='nav-item'>
-                <NavLink activeclassName="active" className='nav-link' to="/diy">Направи си сам</NavLink>
+                <NavLink activeclassName="active" className='nav-link' to="/crafts">Направи си сам</NavLink>
             </li>
             <li className='nav-item'>
                 <NavLink activeclassName="active" className='nav-link' to="/about">За блога</NavLink>

@@ -8,7 +8,7 @@ const BookCard = (props) => {
                 <img className="shared-card-image" src={props.url} alt=""/>
             </div>
             <div className="shared-card-subcategory-wrapper">
-                    <p className="shared-card-subcategory"><span className='recipe-subcategory-span'>{props.subcategory}</span></p>
+                    <p className="shared-card-subcategory"><span className='shared-subcategory-span'>{props.subcategory}</span></p>
                 </div>
             <div className="shared-card-content-wrapper">
                 <div className="shared-card-date-wrapper">

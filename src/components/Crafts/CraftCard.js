@@ -1,15 +1,15 @@
 import '../../SharedCSS/SharedCard.css'
 
-const RecipeCard = (props) => {
+const CraftCard = (props) => {
 
     return (
         <article className="shared-card">
             <div className="shared-card-image-wrapper">
-                <img className="recipe-card-image" src={props.url} alt=""/>
+                <img className="shared-card-image" src={props.url} alt=""/>
             </div>
-            <div className="shared-card-subcategory-wrapper">
+            {/* <div className="shared-card-subcategory-wrapper">
                     <p className="shared-card-subcategory"><span className='shared-subcategory-span'>{props.subcategory}</span></p>
-                </div>
+                </div> */}
             <div className="shared-card-content-wrapper">
                 <div className="shared-card-date-wrapper">
                     <p className="shared-card-date">{props.date}</p>
@@ -28,4 +28,4 @@ const RecipeCard = (props) => {
     );
 };
 
-export default RecipeCard;
+export default CraftCard;

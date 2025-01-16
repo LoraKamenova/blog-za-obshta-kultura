@@ -1,0 +1,10 @@
+.word-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-start; */
+    width: 70%;
+    margin: 10px;
+    padding: 30px;
+    border: 3px double rgb(227, 11, 92);
+}
