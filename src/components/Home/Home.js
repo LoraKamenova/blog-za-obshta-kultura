@@ -13,7 +13,7 @@ class Home extends Component {
         let articles = data.filter(temp => temp.category.includes("Статии")).map(({_id }) => ({_id }));
         let recipes = data.filter(temp => temp.category.includes("Рецепти")).map(({_id, title, date, url, content}) => ({_id, title, date, url, content}));
         let books = data.filter(temp => temp.category.includes("Книги")).map(({_id, title, date, url, content}) => ({_id, title, date, url, content}));
-        let diy = data.filter(temp => temp.category.includes("DIY")).map(({_id, title, date, url, content}) => ({_id, title, date, url, content}));
+        let diy = data.filter(temp => temp.category.includes("Направи си сам")).map(({_id, title, date, url, content}) => ({_id, title, date, url, content}));
 
         const word = words[words.length - 1];
         const articleId = articles[articles.length - 1]._id;

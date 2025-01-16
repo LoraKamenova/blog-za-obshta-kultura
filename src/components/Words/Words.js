@@ -8,7 +8,7 @@ class Words extends Component {
     render() {
 
         let reversedData = data.reverse();
-        let words = reversedData.map(({_id, word, description, comment}) => ({_id, word, description, comment}));
+        let words = reversedData.map(({word, description, comment}) => ({word, description, comment}));
     
         return (
             <section className="words-page">

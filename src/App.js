@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
+import About from './components/About/About';
 
 import AllArticles from './components/Articles/AllArticles';
 import ArticleWrapper from './components/Articles/ArticleWrapper';
@@ -47,6 +48,7 @@ function App() {
      <Header></Header>
      <Routes>
         <Route path="/" element={<Home/>}/>
+
         <Route path="/articles" element={<AllArticles/>}/>
         <Route path="/articles/:id" element={<ArticleWrapper/>}/>
         <Route path="/articles/world" element={<World/>}/>
@@ -58,7 +60,7 @@ function App() {
         <Route path="/articles/garden" element={<Garden/>}/>
         <Route path="/articles/sports" element={<Sports/>}/>
         <Route path="/articles/other" element={<Other/>}/>
-        <Route path="/words" element={<Words/>}/>
+
         <Route path="/recipes" element={<AllRecipes/>}/>
         <Route path="/recipes/:id" element={<RecipeWrapper/>}/>
         <Route path="/recipes/salads" element={<Salads/>}/>
@@ -67,6 +69,7 @@ function App() {
         <Route path="/recipes/baking" element={<Baking/>}/>
         <Route path="/recipes/desserts" element={<Desserts/>}/>
         <Route path="/recipes/drinks" element={<Drinks/>}/>
+
         <Route path="/books" element={<AllBooks/>}/>
         <Route path="/books/:id" element={<BookWrapper/>}/>
         <Route path="/books/fiction" element={<Ficiton/>}/>
@@ -75,9 +78,13 @@ function App() {
         <Route path="/books/bio" element={<Bio/>}/>
         <Route path="/books/guides" element={<Guides/>}/>
         <Route path="/books/sofia" element={<Sofia/>}/>
+
         <Route path="/crafts" element={<AllCrafts/>}/>
         <Route path="/crafts/:id" element={<CraftWrapper/>}/>
-        <Route path="/about" element={<Home/>}/>
+
+        <Route path="/words" element={<Words/>}/>
+
+        <Route path="/about" element={<About/>}/>
      </Routes>
     </div>
   );
