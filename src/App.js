@@ -43,7 +43,7 @@ function App() {
 
         <Route path="/articles" element={<AllArticles/>}/>
         <Route path="/articles/:id" element={<ArticleWrapper/>}/>
-        {/* <Route path="/articles/world" element={<ArticleSubcategory subcategory="Места по света"/>}/>
+        <Route path="/articles/world" element={<ArticleSubcategory subcategory="Места по света"/>}/>
         <Route path="/articles/architecture" element={<ArticleSubcategory subcategory="Архитектурни разкази"/>}/>
         <Route path="/articles/how" element={<ArticleSubcategory subcategory="Как се прави"/>}/>
         <Route path="/articles/stories" element={<ArticleSubcategory subcategory="Историята на"/>}/>
@@ -51,7 +51,7 @@ function App() {
         <Route path="/articles/food-stories" element={<ArticleSubcategory subcategory="Кулинарни класики"/>}/>
         <Route path="/articles/garden" element={<ArticleSubcategory subcategory="В градината"/>}/>
         <Route path="/articles/sports" element={<ArticleSubcategory subcategory="Правилата на играта"/>}/>
-        <Route path="/articles/other" element={<ArticleSubcategory subcategory="Други"/>}/> */}
+        <Route path="/articles/other" element={<ArticleSubcategory subcategory="Други"/>}/>
 
         <Route path="/recipes" element={<AllRecipes/>}/>
         <Route path="/recipes/:id" element={<RecipeWrapper/>}/>
