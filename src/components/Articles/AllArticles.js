@@ -2,7 +2,7 @@ import { React, Component } from 'react';
 import { Link } from "react-router-dom";
 import data from '../../assets/data.json';
 import ArticleCard from '../Articles/ArticleCard';
-import Series from '../Articles/Series/Series';
+import ArticleNavbar from './ArticleNavbar';
 import './AllArticles.css';
 
 class AllArticles extends Component {
@@ -14,7 +14,7 @@ class AllArticles extends Component {
     
         return (
             <section className="all-articles-page">
-                <Series></Series>
+                <ArticleNavbar></ArticleNavbar>
                 <h1 className='all-articles-heading'>Всички статии</h1>
                 <div className='all-articles-container'>
                     {articles.map((x) => (

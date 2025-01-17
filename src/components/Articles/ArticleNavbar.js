@@ -1,6 +1,6 @@
 import { React, Component } from 'react';
 import { Link } from "react-router-dom";
-import './Series.css';
+import './ArticleNavbar.css';
 
 class Series extends Component {
 
