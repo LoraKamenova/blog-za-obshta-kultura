@@ -20,12 +20,7 @@ import Drinks from './components/Recipes/RecipeSeries/Drinks';
 
 import AllBooks from './components/Books/AllBooks';
 import BookWrapper from './components/Books/BookWrapper';
-import Ficiton from './components/Books/BookSeries/Fiction';
-import NonFiction from './components/Books/BookSeries/NonFiction';
-import Economics from './components/Books/BookSeries/Economics';
-import Bio from './components/Books/BookSeries/Bio';
-import Guides from './components/Books/BookSeries/Guides';
-import Sofia from './components/Books/BookSeries/Sofia';
+import BookSubcategory from './components/Books/BookSubcategory';
 
 import AllCrafts from './components/Crafts/AllCrafts';
 import CraftWrapper from './components/Crafts/CraftWrapper';
@@ -64,12 +59,12 @@ function App() {
 
         <Route path="/books" element={<AllBooks/>}/>
         <Route path="/books/:id" element={<BookWrapper/>}/>
-        <Route path="/books/fiction" element={<Ficiton/>}/>
-        <Route path="/books/non-fiction" element={<NonFiction/>}/>
-        <Route path="/books/economics" element={<Economics/>}/>
-        <Route path="/books/bio" element={<Bio/>}/>
-        <Route path="/books/guides" element={<Guides/>}/>
-        <Route path="/books/sofia" element={<Sofia/>}/>
+        <Route path="/books/fiction" element={<BookSubcategory subcategory="Художествена литература"/>}/>
+        <Route path="/books/non-fiction" element={<BookSubcategory subcategory="Нехудожествена литература"/>}/>
+        <Route path="/books/economics" element={<BookSubcategory subcategory="Икономическа литература"/>}/>
+        <Route path="/books/bio" element={<BookSubcategory subcategory="Биографии"/>}/>
+        <Route path="/books/guides" element={<BookSubcategory subcategory="Пътеводители"/>}/>
+        <Route path="/books/sofia" element={<BookSubcategory subcategory="Книги за София"/>}/>
 
         <Route path="/crafts" element={<AllCrafts/>}/>
         <Route path="/crafts/:id" element={<CraftWrapper/>}/>

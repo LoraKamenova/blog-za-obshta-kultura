@@ -11,22 +11,20 @@ const ArticleSubcategory = (props) => {
     return (
 
         <section className="all-articles-page">
-        <h1 className='all-articles-heading'>Поредица "{props.subcategory}"</h1>
-        <div className='all-articles-container'>
-            {articles.map((x) => (
-                <Link className='all-articles-link' key={x._id} {...x} to={`/articles/${x._id}`}>
-                    <ArticleCard title={x.title}
-                    content={x.content}
-                    url={x.url}
-                    date={x.date}
-                    subcategory={x.subcategory}
-                    />
-                </Link>
-                )
-            )}
-        </div>
-    </section>
-
+            <h1 className='all-articles-heading'>Поредица "{props.subcategory}"</h1>
+            <div className='all-articles-container'>
+                {articles.map((x) => (
+                    <Link className='all-articles-link' key={x._id} {...x} to={`/articles/${x._id}`}>
+                        <ArticleCard title={x.title}
+                        content={x.content}
+                        url={x.url}
+                        date={x.date}
+                        subcategory={x.subcategory}
+                        />
+                    </Link>)
+                )}
+            </div>
+        </section>
     )
 };
 
