@@ -28,10 +28,13 @@ class AllBooks extends Component {
                                 <li className='shared-item'>Биографии</li>
                             </Link>
                             <Link className='shared-link' to={`/books/guides`}>
-                                <li className='shared-item'>Пътеводители</li>
+                                <li className='shared-item'>Книги за пътуване</li>
                             </Link>
                             <Link className='shared-link' to={`/books/sofia`}>
                                 <li className='shared-item'>Книги за София</li>
+                            </Link>
+                            <Link className='shared-link' to={`/books/sofia`}>
+                                <li className='shared-item'>Списания</li>
                             </Link>
                         </ul>
                     </div>

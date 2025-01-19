@@ -3,29 +3,23 @@ import { Route, Routes } from 'react-router-dom';
 
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
-import About from './components/About/About';
 
 import AllArticles from './components/Articles/AllArticles';
 import ArticleWrapper from './components/Articles/ArticleWrapper';
 import ArticleSubcategory from './components/Articles/ArticleSubcategory';
 
-import AllRecipes from './components/Recipes/AllRecipes';
-import RecipeWrapper from './components/Recipes/RecipeWrapper';
-import Salads from './components/Recipes/RecipeSeries/Salads';
-import Starters from './components/Recipes/RecipeSeries/Starters';
-import Main from './components/Recipes/RecipeSeries/Main';
-import Baking from './components/Recipes/RecipeSeries/Baking';
-import Desserts from './components/Recipes/RecipeSeries/Desserts';
-import Drinks from './components/Recipes/RecipeSeries/Drinks';
-
 import AllBooks from './components/Books/AllBooks';
 import BookWrapper from './components/Books/BookWrapper';
 import BookSubcategory from './components/Books/BookSubcategory';
 
+import AllRecipes from './components/Recipes/AllRecipes';
+import RecipeWrapper from './components/Recipes/RecipeWrapper';
+import RecipeSubcategory from './components/Recipes/RecipeSubcategory';
+
 import AllCrafts from './components/Crafts/AllCrafts';
 import CraftWrapper from './components/Crafts/CraftWrapper';
-
 import Words from './components/Words/Words';
+import About from './components/About/About';
 
 import './App.css';
 
@@ -50,12 +44,12 @@ function App() {
 
         <Route path="/recipes" element={<AllRecipes/>}/>
         <Route path="/recipes/:id" element={<RecipeWrapper/>}/>
-        <Route path="/recipes/salads" element={<Salads/>}/>
-        <Route path="/recipes/starters" element={<Starters/>}/>
-        <Route path="/recipes/main" element={<Main/>}/>
-        <Route path="/recipes/baking" element={<Baking/>}/>
-        <Route path="/recipes/desserts" element={<Desserts/>}/>
-        <Route path="/recipes/drinks" element={<Drinks/>}/>
+        <Route path="/recipes/salads" element={<RecipeSubcategory subcategory="Салати"/>}/>
+        <Route path="/recipes/starters" element={<RecipeSubcategory subcategory="Предястия"/>}/>
+        <Route path="/recipes/main" element={<RecipeSubcategory subcategory="Основни"/>}/>
+        <Route path="/recipes/baking" element={<RecipeSubcategory subcategory="Тестени"/>}/>
+        <Route path="/recipes/desserts" element={<RecipeSubcategory subcategory="Десерти"/>}/>
+        <Route path="/recipes/drinks" element={<RecipeSubcategory subcategory="Напитки"/>}/>
 
         <Route path="/books" element={<AllBooks/>}/>
         <Route path="/books/:id" element={<BookWrapper/>}/>
