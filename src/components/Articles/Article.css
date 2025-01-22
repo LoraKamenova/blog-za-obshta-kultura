@@ -75,3 +75,49 @@ img[alt="long"] {
     align-self: flex-start;
     margin-left: 5px;
 }
+
+
+
+.series-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 1em;
+    /* border: 1px solid red; */
+}
+
+.series-icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fas {
+    font-size: 2em;
+}
+
+.series-heading {
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    text-wrap: wrap;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.series-link {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.series-link:hover {
+    color: rgb(227, 11, 92);;
+}
