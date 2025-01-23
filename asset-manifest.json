@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/blog-za-obshta-kultura/static/css/main.b710ebd6.css",
-    "main.js": "/blog-za-obshta-kultura/static/js/main.13a0b681.js",
+    "main.css": "/blog-za-obshta-kultura/static/css/main.38530c71.css",
+    "main.js": "/blog-za-obshta-kultura/static/js/main.1236dd94.js",
     "static/js/453.4b0bf006.chunk.js": "/blog-za-obshta-kultura/static/js/453.4b0bf006.chunk.js",
     "static/js/304.9b1e3252.chunk.js": "/blog-za-obshta-kultura/static/js/304.9b1e3252.chunk.js",
     "static/js/294.c0c48fc2.chunk.js": "/blog-za-obshta-kultura/static/js/294.c0c48fc2.chunk.js",
@@ -86,12 +86,12 @@
     "static/media/34.md": "/blog-za-obshta-kultura/static/media/34.af527e4d4ea7163c7c62.md",
     "static/media/4.md": "/blog-za-obshta-kultura/static/media/4.be37ee0e86220537e79f.md",
     "index.html": "/blog-za-obshta-kultura/index.html",
-    "main.b710ebd6.css.map": "/blog-za-obshta-kultura/static/css/main.b710ebd6.css.map",
-    "main.13a0b681.js.map": "/blog-za-obshta-kultura/static/js/main.13a0b681.js.map",
+    "main.38530c71.css.map": "/blog-za-obshta-kultura/static/css/main.38530c71.css.map",
+    "main.1236dd94.js.map": "/blog-za-obshta-kultura/static/js/main.1236dd94.js.map",
     "453.4b0bf006.chunk.js.map": "/blog-za-obshta-kultura/static/js/453.4b0bf006.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b710ebd6.css",
-    "static/js/main.13a0b681.js"
+    "static/css/main.38530c71.css",
+    "static/js/main.1236dd94.js"
   ]
 }
