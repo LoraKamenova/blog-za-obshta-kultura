@@ -2,7 +2,7 @@ import { React } from 'react';
 import { Link } from "react-router-dom";
 import data from '../../assets/data.json';
 import BookCard from './BookCard';
-import '../../SharedCSS/SharedAllPage.css';
+import '../../SharedCSS/AllPosts.css';
 
 const BookSubcategory = (props) => { 
 
@@ -10,11 +10,11 @@ const BookSubcategory = (props) => {
 
     return (
 
-        <section className="all-shared-page">
-            <h1 className='all-shared-heading'>Категория "{props.subcategory}"</h1>
-            <div className='all-shared-container'>
+        <section className="all-posts-page">
+            <h1 className='all-posts-heading'>Категория "{props.subcategory}"</h1>
+            <section className='all-posts-container'>
                 {books.map((x) => (
-                    <Link className='all-shared-link' key={x._id} {...x} to={`/books/${x._id}`}>
+                    <Link className='all-posts-link' key={x._id} {...x} to={`/books/${x._id}`}>
                         <BookCard title={x.title}
                         content={x.content}
                         url={x.url}
@@ -23,7 +23,7 @@ const BookSubcategory = (props) => {
                         />
                     </Link>)
                 )}
-            </div>
+            </section>
         </section>
     )
 };

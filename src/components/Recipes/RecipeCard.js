@@ -1,27 +1,27 @@
-import '../../SharedCSS/SharedCard.css'
+import '../../SharedCSS/Card.css'
 
 const RecipeCard = (props) => {
 
     return (
-        <article className="shared-card">
-            <div className="shared-card-image-wrapper">
-                <img className="recipe-card-image" src={props.url} alt=""/>
+        <article className="card">
+            <div className="card-image-wrapper">
+                <img className="card-image recipe-card-image" src={props.url} alt=""/>
             </div>
-            <div className="shared-card-subcategory-wrapper">
-                    <p className="shared-card-subcategory"><span className='shared-subcategory-span'>{props.subcategory}</span></p>
+            <div className="card-subcategory-wrapper">
+                    <p className="card-subcategory"><span className='card-subcategory-span'>{props.subcategory}</span></p>
                 </div>
-            <div className="shared-card-content-wrapper">
-                <div className="shared-card-date-wrapper">
-                    <p className="shared-card-date">{props.date}</p>
+            <div className="card-content-wrapper">
+                <div className="card-date-wrapper">
+                    <p className="card-date">{props.date}</p>
                 </div>
-                <div className="shared-card-title-wrapper">
-                    <h3 className="shared-card-title">{props.title}</h3>
+                <div className="card-title-wrapper">
+                    <h3 className="card-title">{props.title}</h3>
                 </div>
-                <div className="shared-card-text-wrapper">
-                    <p className="shared-card-text">{props.content.substring(0, 130) + "..."}</p>
+                <div className="card-text-wrapper">
+                    <p className="card-text">{props.content.substring(0, 130) + "..."}</p>
                 </div>
-                <div className="shared-card-button-wrapper">
-                    <div className="shared-card-fake-button">Виж &gt;&gt;</div>
+                <div className="card-button-wrapper">
+                    <div className="card-fake-button">Виж &gt;&gt;</div>
                 </div>
             </div>
         </article>

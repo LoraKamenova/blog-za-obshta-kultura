@@ -1,6 +1,6 @@
 import { React, Component } from 'react';
 import ReactMarkdown from 'react-markdown';
-import '../../SharedCSS/SharedSinglePage.css';
+import '../../SharedCSS/SinglePost.css';
 
 class Recipe extends Component {
   constructor(props) {
@@ -17,9 +17,9 @@ async componentWillMount() {
 
   render() {
     return (
-      <div className='shared-section'>
-        <div className="shared">
-          <ReactMarkdown className="shared-markdown" children={this.state.terms} />
+      <div className='post-page'>
+        <div className="post">
+          <ReactMarkdown className="post-markdown" children={this.state.terms} />
         </div>
       </div>
     )

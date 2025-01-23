@@ -1,6 +1,6 @@
 import { React, Component } from 'react';
 import ReactMarkdown from 'react-markdown';
-import './Article.css';
+import '../../SharedCSS/SinglePost.css';
 
 class Article extends Component {
   constructor(props) {
@@ -17,9 +17,9 @@ async componentWillMount() {
 
   render() {
     return (
-      <div className='article-section'>
-        <div className="article">
-          <ReactMarkdown className="markdown" children={this.state.terms} />
+      <div className='post-page'>
+        <div className="post">
+          <ReactMarkdown className="post-markdown" children={this.state.terms} />
         </div>
       </div>
     )
