@@ -3,8 +3,10 @@
     flex-direction: column;
     justify-content: center;
     width: 70%;
-    /* margin: 10px; */
-    padding: 30px;
+    padding: 20px;
     border-top: 2px solid rgb(227, 11, 92);
-    /* border-bottom: 1px solid rgb(227, 11, 92); */
+}
+
+.word-card-comment {
+    margin-bottom: 10px;
 }
