@@ -7,17 +7,22 @@ import Home from './components/Home/Home';
 import AllArticles from './components/Articles/AllArticles';
 import ArticleWrapper from './components/Articles/ArticleWrapper';
 import ArticleSubcategory from './components/Articles/ArticleSubcategory';
+import ArticleTag from './components/Articles/ArticleTag';
 
 import AllBooks from './components/Books/AllBooks';
 import BookWrapper from './components/Books/BookWrapper';
 import BookSubcategory from './components/Books/BookSubcategory';
+import BookTag from './components/Books/BookTag';
 
 import AllRecipes from './components/Recipes/AllRecipes';
 import RecipeWrapper from './components/Recipes/RecipeWrapper';
 import RecipeSubcategory from './components/Recipes/RecipeSubcategory';
+import RecipeTag from './components/Recipes/RecipeTag';
 
 import AllCrafts from './components/Crafts/AllCrafts';
 import CraftWrapper from './components/Crafts/CraftWrapper';
+import CraftTag from './components/Crafts/CraftTag';
+
 import Words from './components/Words/Words';
 import About from './components/About/About';
 
@@ -41,6 +46,7 @@ function App() {
         <Route path="/articles/garden" element={<ArticleSubcategory subcategory="В градината"/>}/>
         <Route path="/articles/sports" element={<ArticleSubcategory subcategory="Правилата на играта"/>}/>
         <Route path="/articles/other" element={<ArticleSubcategory subcategory="Други"/>}/>
+        <Route path="/articles/tags" element={<ArticleTag/>}/>
 
         <Route path="/recipes" element={<AllRecipes/>}/>
         <Route path="/recipes/:id" element={<RecipeWrapper/>}/>
@@ -50,18 +56,22 @@ function App() {
         <Route path="/recipes/baking" element={<RecipeSubcategory subcategory="Тестени"/>}/>
         <Route path="/recipes/desserts" element={<RecipeSubcategory subcategory="Десерти"/>}/>
         <Route path="/recipes/drinks" element={<RecipeSubcategory subcategory="Напитки"/>}/>
+        <Route path="/recipes/tags" element={<RecipeTag/>}/>
 
         <Route path="/books" element={<AllBooks/>}/>
         <Route path="/books/:id" element={<BookWrapper/>}/>
         <Route path="/books/fiction" element={<BookSubcategory subcategory="Художествена литература"/>}/>
         <Route path="/books/non-fiction" element={<BookSubcategory subcategory="Нехудожествена литература"/>}/>
-        <Route path="/books/economics" element={<BookSubcategory subcategory="Икономическа литература"/>}/>
+        <Route path="/books/economics" element={<BookSubcategory subcategory="Икономика"/>}/>
         <Route path="/books/bio" element={<BookSubcategory subcategory="Биографии"/>}/>
-        <Route path="/books/guides" element={<BookSubcategory subcategory="Пътеводители"/>}/>
-        <Route path="/books/sofia" element={<BookSubcategory subcategory="Книги за София"/>}/>
+        <Route path="/books/guides" element={<BookSubcategory subcategory="Пътиване"/>}/>
+        <Route path="/books/sofia" element={<BookSubcategory subcategory="София"/>}/>
+        <Route path="/books/magazines" element={<BookSubcategory subcategory="Списания"/>}/>
+        <Route path="/books/tags" element={<BookTag/>}/>
 
         <Route path="/crafts" element={<AllCrafts/>}/>
         <Route path="/crafts/:id" element={<CraftWrapper/>}/>
+        <Route path="/crafts/tags" element={<CraftTag/>}/>
 
         <Route path="/words" element={<Words/>}/>
 

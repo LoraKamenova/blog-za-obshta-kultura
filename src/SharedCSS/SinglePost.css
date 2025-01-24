@@ -1,6 +1,6 @@
 .post-page {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-self: center;
@@ -71,4 +71,31 @@ img[alt="long"] {
     font-style: italic;
     align-self: flex-start;
     margin-left: 5px;
+}
+
+.tag-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70%;
+}
+
+.tag-link {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 10px;
+    text-decoration: none;
+    outline: 1px solid rgb(227, 11, 92);
+    border-radius: 7px;
+    color: rgb(227, 11, 92);
+    background-color: whitesmoke;
+}
+
+.tag-link:hover {
+    background-color: rgb(227, 11, 92);
+    color: white;
+    outline: 1px solid rgb(227, 11, 92);
 }

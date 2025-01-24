@@ -8,7 +8,7 @@ class AllBooks extends Component {
 
     render() {
 
-        let recipes = data.filter(temp => temp.category.includes("Книги")).map(({_id, title, url, subcategory, content, date}) => ({_id, title, url, subcategory, content, date}));
+        let books = data.filter(temp => temp.category.includes("Книги")).map(({_id, title, url, subcategory, content, date }) => ({_id, title, url, subcategory, content, date }));
     
         return (
             <section className="all-posts-page">
@@ -21,16 +21,16 @@ class AllBooks extends Component {
                             <li className='subcategory-item'>Нехудожествена литература</li>
                         </Link>
                         <Link className='subcategory-link' to={`/books/economics`}>
-                            <li className='subcategory-item'>Икономическа литература</li>
+                            <li className='subcategory-item'>Икономика</li>
                         </Link>
                         <Link className='subcategory-link' to={`/books/bio`}>
                             <li className='subcategory-item'>Биографии</li>
                         </Link>
                         <Link className='subcategory-link' to={`/books/guides`}>
-                            <li className='subcategory-item'>Книги за пътуване</li>
+                            <li className='subcategory-item'>Пътуване</li>
                         </Link>
                         <Link className='subcategory-link' to={`/books/sofia`}>
-                            <li className='subcategory-item'>Книги за София</li>
+                            <li className='subcategory-item'>София</li>
                         </Link>
                         <Link className='subcategory-link' to={`/books/sofia`}>
                             <li className='subcategory-item'>Списания</li>
@@ -39,7 +39,7 @@ class AllBooks extends Component {
                 </section>
                 <h1 className='all-posts-heading'>Всички книги</h1>
                 <section className='all-posts-container'>
-                    {recipes.map((x) => (
+                    {books.map((x) => (
                         <Link className='all-posts-link' key={x._id} {...x} to={`/books/${x._id}`}>
                             <BookCard title={x.title}
                             content={x.content}

@@ -18,7 +18,6 @@ class Home extends Component {
         const word = words[words.length - 1];
         const articleId = articles[articles.length - 1]._id;
         const recipe = recipes[recipes.length - 1];
-        // console.log(recipe._id);
         const book = books[books.length - 1];
         const DIY = diy[diy.length - 1];
 
