@@ -1,6 +1,8 @@
 import { React, Component } from 'react';
 import ReactMarkdown from 'react-markdown';
 import './HomeArticle.css';
+import '../../SharedCSS/SinglePost.css';
+import rehypeRaw from 'rehype-raw';
 
 class HomeArticle extends Component {
   constructor(props) {
@@ -18,7 +20,7 @@ async componentWillMount() {
   render() {
     return (
       <div className="home-article-section">
-        <ReactMarkdown className="markdown-home" children={this.state.terms} />
+        <ReactMarkdown className="post-markdown" children={this.state.terms} rehypePlugins={[rehypeRaw]} />
       </div>
     )
   }

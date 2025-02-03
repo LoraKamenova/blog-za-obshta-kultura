@@ -73,6 +73,10 @@ img[alt="long"] {
     margin-left: 5px;
 }
 
+.post-markdown > .caption {
+    font-style: italic;
+}
+
 /* --------------------------------------- */
 /* Tags */
 
@@ -110,8 +114,4 @@ img[alt="long"] {
     text-transform: capitalize;
     /* font-weight: bold; */
     font-size: 20px;
-}
-
-.caption {
-    color: red;
 }

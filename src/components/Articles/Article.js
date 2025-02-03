@@ -26,7 +26,6 @@ async componentWillMount() {
       <div className='post-page'>
         <div className="post">
           <ReactMarkdown className="post-markdown" children={this.state.terms} rehypePlugins={[rehypeRaw]}/>
-          {/* <ReactMarkdown className="post-markdown" rehypePlugins={[rehypeRaw]}/><span>test</span> */}
         </div>
         <div className='tag-container'>
           <span className='tag-span'>етикети</span>
