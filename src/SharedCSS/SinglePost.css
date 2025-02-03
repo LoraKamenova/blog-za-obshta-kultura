@@ -42,7 +42,6 @@
     flex-direction: row;
     justify-content: center;
     text-align: justify;
-    
 }
 
 .post-markdown p:first-of-type{
@@ -114,4 +113,16 @@ img[alt="long"] {
     text-transform: capitalize;
     /* font-weight: bold; */
     font-size: 20px;
+}
+
+.markdown-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.markdown-li {
+    list-style-type: none;
+    margin-left: 50px;
 }

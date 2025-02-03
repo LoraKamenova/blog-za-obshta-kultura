@@ -4,30 +4,30 @@
 
 ![landscape]()
 
-Снимка: / 
+<p class='caption'>Снимка:  / <p>
 
 ....
 
 ![landscape]()
 
-Снимка: / 
+<p class='caption'>Снимка:  / <p>
 
 ....
 
 ![landscape]()
 
-Снимка: / 
+<p class='caption'>Снимка:  / <p>
 
 ....
 
 ![landscape]()
 
-Снимка: / 
+<p class='caption'>Снимка:  / <p>
 
 ....
 
 ![portrait]()
 
-Снимка: / 
+<p class='caption'>Снимка:  / <p>
 
 ....
