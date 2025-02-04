@@ -20,6 +20,46 @@
     width: 70%;
 }
 
+/* Tags */
+
+.tag-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70%;
+    border-top: 1px solid black;
+    margin-top: 15px;
+    padding: 15px 0;
+}
+
+.tag-link {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    outline: 1px solid rgb(227, 11, 92);
+    border-radius: 7px;
+    color: rgb(227, 11, 92);
+    background-color: whitesmoke;
+}
+
+.tag-link:hover {
+    background-color: rgb(227, 11, 92);
+    color: white;
+    outline: 1px solid rgb(227, 11, 92);
+}
+
+.tag-span {
+    text-transform: capitalize;
+    /* font-weight: bold; */
+    font-size: 20px;
+}
+
+/* --------------------- */
+
 .post-markdown {
     display: flex;
     flex-direction: column;
@@ -76,53 +116,32 @@ img[alt="long"] {
     font-style: italic;
 }
 
-/* --------------------------------------- */
-/* Tags */
-
-.tag-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 70%;
-    border-top: 1px solid black;
-    margin-top: 15px;
-    padding: 15px 0;
-}
-
-.tag-link {
-    display: flex;
-    align-self: flex-end;
-    justify-content: center;
-    align-items: center;
-    margin: 5px 10px;
-    padding: 5px 10px;
-    text-decoration: none;
-    outline: 1px solid rgb(227, 11, 92);
-    border-radius: 7px;
-    color: rgb(227, 11, 92);
-    background-color: whitesmoke;
-}
-
-.tag-link:hover {
-    background-color: rgb(227, 11, 92);
-    color: white;
-    outline: 1px solid rgb(227, 11, 92);
-}
-
-.tag-span {
-    text-transform: capitalize;
-    /* font-weight: bold; */
-    font-size: 20px;
-}
-
 .markdown-ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
+    margin: 10px 0;
 }
 
 .markdown-li {
     list-style-type: none;
     margin-left: 50px;
+}
+
+.markdown-link {
+    margin-top: 5px;
+    margin-left: 5px;
+    font-style: italic;
+    text-align: center;
+}
+
+.markdown-link a{
+    text-decoration: none;
+    color: black;
+}
+
+.markdown-here {
+    margin-left: 5px;
+    color: rgb(227, 11, 92);
 }
