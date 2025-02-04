@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog_za_obshta_kultura=self.webpackChunkblog_za_obshta_kultura||[]).push([[746],{2746:(a,s,t)=>{a.exports=t.p+"static/media/36.65cb9b2335d1aa52825d.md"}}]);
