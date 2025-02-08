@@ -8,9 +8,9 @@ class AllArticles extends Component {
 
     render() {
 
-        let reversedData = data.reverse();
-        let articles = reversedData.filter(temp => temp.category.includes("Статии")).map(({_id, title, url, subcategory, content, date}) => ({_id, title, url, subcategory, content, date}));
-    
+        let articles = data.filter(temp => temp.category.includes("Статии")).map(({_id, title, url, subcategory, content, date}) => ({_id, title, url, subcategory, content, date}));
+        let reversedArticles = articles.reverse();
+
         return (
             <section className="all-posts-page">
                 <section className='sub-articles-container'>
@@ -98,7 +98,7 @@ class AllArticles extends Component {
                 </section>
                 <h1 className='all-posts-heading'>Всички статии</h1>
                 <section className='all-posts-container'>
-                    {articles.map((x) => (
+                    {reversedArticles.map((x) => (
                         <Link className='all-posts-link' key={x._id} {...x} to={`/articles/${x._id}`}>
                             <ArticleCard title={x.title}
                             content={x.content}

@@ -50,7 +50,7 @@ class Home extends Component {
                         <div className='home-new-wrapper'>
                             <span className='home-new'>Читателски дневник</span>
                         </div>
-                        <Link className='home-link' key={book._id} {...book} to={`/book/${book._id}`}>
+                        <Link className='home-link' key={book._id} {...book} to={`/books/${book._id}`}>
                                 <HomeCard title={book.title}
                                 content={book.content}
                                 url={book.url}
@@ -74,7 +74,7 @@ class Home extends Component {
                         <div className='home-new-wrapper'>
                             <span className='home-new'>Направи си сам</span>
                         </div>
-                        <Link className='home-link' key={DIY._id} {...DIY} to={`/diy/${DIY._id}`}>
+                        <Link className='home-link' key={DIY._id} {...DIY} to={`/crafts/${DIY._id}`}>
                                 <HomeCard title={DIY.title}
                                 content={DIY.content}
                                 url={DIY.url}

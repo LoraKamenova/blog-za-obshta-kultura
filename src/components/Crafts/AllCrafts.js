@@ -9,13 +9,14 @@ class AllCrafts extends Component {
     render() {
 
         let crafts = data.filter(temp => temp.category.includes("Направи си сам")).map(({_id, title, url, subcategory, content, date}) => ({_id, title, url, subcategory, content, date}));
-    
+        let reversedCrafts = crafts.reverse();
+
         return (
             <section className="all-posts-page">
                 <h1 className='all-posts-heading'>Всички статии</h1>
                 <div className='all-posts-container'>
-                    {crafts.map((x) => (
-                        <Link className='all-posts-link' key={x._id} {...x} to={`/diy/${x._id}`}>
+                    {reversedCrafts.map((x) => (
+                        <Link className='all-posts-link' key={x._id} {...x} to={`/crafts/${x._id}`}>
                             <CraftCard title={x.title}
                             content={x.content}
                             url={x.url}

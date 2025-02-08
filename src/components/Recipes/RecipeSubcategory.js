@@ -7,13 +7,14 @@ import '../../SharedCSS/AllPosts.css';
 const RecipeSubcategory = (props) => { 
 
     let recipes = data.filter(temp => temp.subcategory.includes(props.subcategory)).map(({_id, title, url, subcategory, content, date}) => ({_id, title, url, subcategory, content, date}));
+    let reversedRecipes = recipes.reverse();
 
     return (
 
         <section className="all-posts-page">
             <h1 className='all-posts-heading'>Категория "{props.subcategory}"</h1>
             <div className='all-posts-container'>
-                {recipes.map((x) => (
+                {reversedRecipes.map((x) => (
                     <Link className='all-posts-link' key={x._id} {...x} to={`/recipes/${x._id}`}>
                         <RecipeCard title={x.title}
                         content={x.content}
