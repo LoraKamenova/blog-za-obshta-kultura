@@ -50,6 +50,7 @@ class Recipe extends Component {
                   <img className='recipe-image landscape' src={post.secondPicture}></img>
                 )
             }})()}
+            
         <div className='tag-container'>
           <span className='tag-span'>Етикети:</span>
           {obj.tags.map((x) => (<Link className='tag-link' to={`/recipes/tags`} state={{tag: `${x}`}}>{x}</Link>))}
