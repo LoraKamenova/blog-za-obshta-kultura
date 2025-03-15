@@ -91,3 +91,8 @@
 .recipe-notes-container {
     margin: 20px 0;
 }
+
+.fas.fa-utensil-spoon, .fas.fa-shopping-basket, .fas.fa-lightbulb {
+    font-size: 1rem;
+    color: rgb(227, 11, 92);
+}

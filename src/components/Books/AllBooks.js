@@ -8,8 +8,10 @@ class AllBooks extends Component {
 
     render() {
 
-        let books = data.filter(temp => temp.category.includes("Книги")).map(({_id, title, url, subcategory, content, date }) => ({_id, title, url, subcategory, content, date }));
+        let books = data.filter(temp => temp.category.includes("Книги"))
+            .map(({_id, title, url, subcategory, content, date }) => ({_id, title, url, subcategory, content, date }));
         let reversedBooks = books.reverse();
+
         return (
             <section className="all-posts-page">
                 <section className='subcategories'>

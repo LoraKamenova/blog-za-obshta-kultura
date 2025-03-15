@@ -27,6 +27,8 @@ import Words from './components/Words/Words';
 import About from './components/About/About';
 
 import './App.css';
+import Admin from './components/Admin/Admin';
+import RecipeForm from './components/Admin/RecipeForm';
 
 function App() {
   return (
@@ -76,6 +78,13 @@ function App() {
         <Route path="/words" element={<Words/>}/>
 
         <Route path="/about" element={<About/>}/>
+
+        <Route path="/admn" element={<Admin/>}/>
+        <Route path="/admn/post" element={<Admin/>}/>
+        <Route path="/admn/recipe" element={<RecipeForm/>}/>
+        <Route path="/admn/book" element={<Admin/>}/>
+        <Route path="/admn/craft" element={<Admin/>}/>
+        <Route path="/admn/word" element={<Admin/>}/>
      </Routes>
     </div>
   );

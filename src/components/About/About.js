@@ -1,7 +1,7 @@
 import { React, Component } from 'react';
 import './About.css';
 
-class Home extends Component {
+class About extends Component {
 
     render() {
 
@@ -10,4 +10,4 @@ class Home extends Component {
         )
     }
 }
-export default Home;
+export default About;
