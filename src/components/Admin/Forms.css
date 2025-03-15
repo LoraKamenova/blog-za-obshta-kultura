@@ -48,20 +48,107 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
 .form-heading {
-    text-align: center;
+    text-align: left;
+    width: 100%;
+    padding-left: 200px;
+    /* margin-bottom: 10px; */
+    /* color: rgb(227, 11, 92); */
+    font-style: italic;
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
 .form-ingredients, .form-steps, .form-notes {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 10px 0;
+    width: 100%;
+}
+
+.input {
+    margin-top: 2px;
+    width: 95%;
+}
+
+.input::placeholder {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    padding-left: 5px;
+}
+
+.left-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    /* border: 1px solid rgb(227, 11, 92); */
+}
+
+.right-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    /* margin-top: 50px; */
+    /* border: 1px solid rgb(227, 11, 92); */
+}
+
+.fields-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* border: 1px solid green; */
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 200px;
+    align-items: center;
+}
+
+.form-button {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    text-decoration: none;
+    outline: 1px solid black;
+    border-radius: 7px;
+    background-color: whitesmoke;
+    min-width: 160px;
+}
+
+.form-button:hover {
+    background-color: rgb(227, 11, 92);
+    font-weight: bold;
+    color: white;
+    outline: 1px solid rgb(227, 11, 92);
+    cursor: pointer;
+}
+
+.textarea {
+    margin: 5px 0;
 }
