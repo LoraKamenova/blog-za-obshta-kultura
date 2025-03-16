@@ -52,36 +52,45 @@
     font-family: 'Trebuchet MS', sans-serif;
 }
 
-.form-heading {
-    text-align: left;
-    width: 100%;
-    padding-left: 200px;
-    /* margin-bottom: 10px; */
-    /* color: rgb(227, 11, 92); */
-    font-style: italic;
-}
-
 .form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 95%;
+    width: 90%;
     font-family: 'Trebuchet MS', sans-serif;
 }
 
-.form-ingredients, .form-steps, .form-notes {
+.form-heading, .result-heading {
+    text-align: center;
+    width: 100%;
+    font-style: italic;
+    margin: 5px 0;
+    width: 100%;
+    font-size: 30px;
+}
+
+.fields-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form-half {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10px 0;
-    width: 100%;
+    width: 50%;
 }
 
 .input {
-    margin-top: 2px;
+    width: 100%;
+    margin-top: 5px;
     width: 95%;
+    padding: 1px;
 }
 
 .input::placeholder {
@@ -90,38 +99,17 @@
     padding-left: 5px;
 }
 
-.left-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    /* border: 1px solid rgb(227, 11, 92); */
-}
-
-.right-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    /* margin-top: 50px; */
-    /* border: 1px solid rgb(227, 11, 92); */
-}
-
-.fields-container {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    /* border: 1px solid green; */
+.textarea {
+    margin: 5px 0;
 }
 
 .button-container {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    padding-right: 200px;
+    justify-content: center;
+    /* padding-right: 200px; */
+    padding: 10px;
     align-items: center;
 }
 
@@ -131,7 +119,7 @@
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    margin: 10px;
+    margin: 5px;
     padding: 10px;
     border: none;
     text-decoration: none;
@@ -149,6 +137,24 @@
     cursor: pointer;
 }
 
-.textarea {
-    margin: 5px 0;
+.result-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* align-self: flex-start; */
+    width: 80%;
 }
+
+.result-heading {
+    text-align: left;
+    width: 100%;
+    font-style: italic;
+    margin: 5px 0;
+    width: 100%;
+    font-size: 30px;
+}
+
+/* .result-text {
+    width: 100%;
+} */

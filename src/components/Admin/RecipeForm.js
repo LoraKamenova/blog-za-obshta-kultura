@@ -3,35 +3,14 @@ import './Forms.css';
 
 const RecipeForm = (props) => { 
 
+    const [text, setText]=useState("");
     const [formData, setFormData] = useState({
         title: "",
         introduction: "",
         url: "",
-        ingredients1: "",
-        ingredients2: "",
-        ingredients3: "",
-        ingredients4: "",
-        ingredients5: "",
-        ingredients6: "",
-        ingredients7: "",
-        ingredients8: "",
-        ingredients9: "",
-        ingredients10: "",
-        step1: "",
-        step2: "",
-        step3: "",
-        step4: "",
-        step5: "",
-        step6: "",
-        step7: "",
-        step8: "",
-        step9: "",
-        step10: "",
-        note1: "",
-        note2: "",
-        note3: "",
-        note4: "",
-        note5: "",
+        ingredients: "",
+        steps: "",
+        notes: "",
         url2: ""
     });
 
@@ -39,100 +18,54 @@ const RecipeForm = (props) => {
       const { name, value } = event.target;
       setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
     };
-  
+
     const handleSubmit = (event) => {
-      event.preventDefault();
+        event.preventDefault();
 
-    var jsonObject = {};
-    let ingredients = [
-        formData.ingredients1, 
-        formData.ingredients2, 
-        formData.ingredients3,
-        formData.ingredients4,
-        formData.ingredients5,
-        formData.ingredients6,
-        formData.ingredients7,
-        formData.ingredients8,
-        formData.ingredients9,
-        formData.ingredients10,
-    ];
-    let steps = [
-        formData.step1, 
-        formData.step2, 
-        formData.step3,
-        formData.step4,
-        formData.step5,
-        formData.step6,
-        formData.step7,
-        formData.step8,
-        formData.step9,
-        formData.step10
-    ];
-    let notes = [
-        formData.note1, 
-        formData.note2, 
-        formData.note3,
-        formData.note4,
-        formData.note5
-    ];
+        var jsonObject = {};
 
-    ingredients = ingredients.filter(item => item);
-    steps = steps.filter(item => item);
-    notes = notes.filter(item => item);
+        let ingredients = formData.ingredients.split(";").map(s => s.trim());
+        ingredients = ingredients.filter(item => item);
 
-    jsonObject.title = formData.title;
-    jsonObject.introduction = formData.introduction;
-    jsonObject.url = formData.url;
-    jsonObject.ingredients = ingredients;
-    jsonObject.steps = steps;
-    jsonObject.notes = notes;
-    jsonObject.url2 = formData.url2;
-    
-    alert(`${JSON.stringify(jsonObject, null, 4)}`);
-  };
+        let steps = formData.steps.split(";").map(s => s.trim());
+        steps = steps.filter(item => item);
 
-  function reset(event) {
-    event.preventDefault();
-    setFormData({ 
-        title: "",
-        introduction: "",
-        url: "",
-        ingredients1: "",
-        ingredients2: "",
-        ingredients3: "",
-        ingredients4: "",
-        ingredients5: "",
-        ingredients6: "",
-        ingredients7: "",
-        ingredients8: "",
-        ingredients9: "",
-        ingredients10: "",
-        step1: "",
-        step2: "",
-        step3: "",
-        step4: "",
-        step5: "",
-        step6: "",
-        step7: "",
-        step8: "",
-        step9: "",
-        step10: "",
-        note1: "",
-        note2: "",
-        note3: "",
-        note4: "",
-        note5: "",
-        url2: ""
-    });
-  }
+        let notes = formData.notes.split(";").map(s => s.trim());
+        notes = notes.filter(item => item);
+
+        jsonObject.title = formData.title;
+        jsonObject.introduction = formData.introduction;
+        jsonObject.url = formData.url;
+        jsonObject.ingredients = ingredients;
+        jsonObject.steps = steps;
+        jsonObject.notes = notes;
+        jsonObject.url2 = formData.url2;
+
+        // alert(`${JSON.stringify(jsonObject, null, 4)}`);
+        setText(`${JSON.stringify(jsonObject, null, 4)}`);
+    };
+
+    function reset(event) {
+        event.preventDefault();
+        setFormData({ 
+            title: "",
+            introduction: "",
+            url: "",
+            ingredients: "",
+            steps: "",
+            notes: "",
+            url2: ""
+        });
+        setText("");
+    };
   
     return (
         <div className='form-page'>
-            <h1 className='form-heading'>Рецепта</h1>
             <form className='form' onSubmit={handleSubmit}>
+                <h1 className='form-heading'>Нова рецепта</h1>
                 <div className='fields-container'>
-                    <div className='left-form'>
-    
+                    <div className='form-half'>
+                        {/* <label>Заглавие</label> */}
                         <input className='input'
                             type="text" 
                             id="title" 
@@ -141,274 +74,82 @@ const RecipeForm = (props) => {
                             value={formData.title} 
                             onChange={handleChange}
                         />
-    
+                
+                        {/* <label>Представяне</label> */}
                         <textarea className='input textarea'
                             id="introduction" 
                             name="introduction" 
-                            placeholder="Увод"
-                            rows="3"
+                            placeholder="Представяне"
+                            rows="5"
                             value={formData.introduction} 
                             onChange={handleChange}
-                            />
-
+                        />
+                
+                        {/* <label>Снимка 1</label> */}
                         <input className='input'
                             type="text" 
                             id="url" 
                             name="url" 
-                            placeholder="Снимка 1"
+                            placeholder="Водеща снимка"
                             value={formData.url} 
                             onChange={handleChange}
                         />
-
-                        <input className='input'
+                        {/* <label>Снимка 2</label> */}
+                            <input className='input'
                             type="text" 
                             id="url2" 
                             name="url2" 
-                            placeholder="Снимка 2"
+                            placeholder="Допълнителна снимка"
                             value={formData.url2} 
                             onChange={handleChange}
                         />
 
-                        <div className='form-ingredients'>
-                            <input className='input'
-                                type="text" 
-                                id="ingredients1" 
-                                name="ingredients1" 
-                                placeholder="Продукт"
-                                value={formData.ingredients1} 
-                                onChange={handleChange}
-                            />
-
-                            <input className='input'
-                                type="text" 
-                                id="ingredients2" 
-                                name="ingredients2" 
-                                placeholder="Продукт"
-                                value={formData.ingredients2} 
-                                onChange={handleChange}
-                            />
-
-                            <input className='input'
-                                type="text" 
-                                id="ingredients3" 
-                                name="ingredients3" 
-                                placeholder="Продукт"
-                                value={formData.ingredients3} 
-                                onChange={handleChange}
-                            />
-
-                            <input className='input'
-                                type="text" 
-                                id="ingredients4" 
-                                name="ingredients4"
-                                placeholder="Продукт" 
-                                value={formData.ingredients4} 
-                                onChange={handleChange}
-                            />
-
-                            <input className='input'
-                                type="text" 
-                                id="ingredients5" 
-                                name="ingredients5" 
-                                placeholder="Продукт"
-                                value={formData.ingredients5} 
-                                onChange={handleChange}
-                            />
-
-                            <input className='input'
-                                type="text" 
-                                id="ingredients6" 
-                                name="ingredients6" 
-                                placeholder="Продукт"
-                                value={formData.ingredients6} 
-                                onChange={handleChange}
-                            />
-
-                            <input className='input'
-                                type="text" 
-                                id="ingredients7" 
-                                name="ingredients7" 
-                                placeholder="Продукт"
-                                value={formData.ingredients7} 
-                                onChange={handleChange}
-                            />
-
-                            <input className='input'
-                                type="text" 
-                                id="ingredients8" 
-                                name="ingredients8" 
-                                placeholder="Продукт"
-                                value={formData.ingredients8} 
-                                onChange={handleChange}
-                            />
-
-                            <input className='input'
-                                type="text" 
-                                id="ingredients9" 
-                                name="ingredients9" 
-                                placeholder="Продукт"
-                                value={formData.ingredients9} 
-                                onChange={handleChange}
-                            />
-
-                            <input className='input'
-                                type="text" 
-                                id="ingredients10" 
-                                name="ingredients10" 
-                                placeholder="Продукт"
-                                value={formData.ingredients10} 
-                                onChange={handleChange}
-                            />
-                        </div>
+                        {/* <label>Необходими продукти</label> */}
+                            <textarea className='input textarea'
+                            id="ingredients" 
+                            name="ingredients" 
+                            placeholder="Необходими продукти"
+                            rows="12"
+                            value={formData.ingredients} 
+                            onChange={handleChange}
+                        />
                     </div>
 
-                    <div className='right-form'>
-                        <div className='form-steps'>
-                            <input className='input'
-                                type="text" 
-                                id="step1" 
-                                name="step1" 
-                                placeholder="Стъпка"
-                                value={formData.step1} 
-                                onChange={handleChange}
-                            />
+                    <div className='form-half'>
+                        {/* <label>Стъпки за изпълнение</label> */}
+                        <textarea className='input textarea'
+                            type="text" 
+                            id="steps" 
+                            name="steps" 
+                            rows="15"
+                            placeholder="Стъпки"
+                            value={formData.steps} 
+                            onChange={handleChange}
+                        />
 
-                            <input className='input'
-                                type="text" 
-                                id="step2" 
-                                name="step2" 
-                                placeholder="Стъпка"
-                                value={formData.step2} 
-                                onChange={handleChange}
-                            />
-
-                            <input className='input'
-                                type="text" 
-                                id="step3" 
-                                name="step3" 
-                                placeholder="Стъпка"
-                                value={formData.step3} 
-                                onChange={handleChange}
-                            />
-
-                            <input className='input'
-                                type="text" 
-                                id="step4" 
-                                name="step4" 
-                                placeholder="Стъпка"
-                                value={formData.step4} 
-                                onChange={handleChange}
-                            />
-
-                            <input className='input'
-                                type="text" 
-                                id="step5" 
-                                name="step5" 
-                                placeholder="Стъпка"
-                                value={formData.step5} 
-                                onChange={handleChange}
-                            />
-
-                            <input className='input'
-                                type="text" 
-                                id="step6" 
-                                name="step6" 
-                                placeholder="Стъпка"
-                                value={formData.step6} 
-                                onChange={handleChange}
-                            />
-
-                            <input className='input'
-                                type="text" 
-                                id="step7" 
-                                name="step7" 
-                                placeholder="Стъпка"
-                                value={formData.step7} 
-                                onChange={handleChange}
-                            />
-
-                            <input className='input'
-                                type="text" 
-                                id="step8" 
-                                name="step8" 
-                                placeholder="Стъпка"
-                                value={formData.step8} 
-                                onChange={handleChange}
-                            />
-
-                            <input className='input'
-                                type="text" 
-                                id="step9" 
-                                name="step9" 
-                                placeholder="Стъпка"
-                                value={formData.step9} 
-                                onChange={handleChange}
-                            />
-
-                            <input className='input'
-                                type="text" 
-                                id="step10" 
-                                name="step10" 
-                                placeholder="Стъпка"
-                                value={formData.step10} 
-                                onChange={handleChange}
-                            />
-                        </div>
-
-                        <div className='form-notes'>
-                            <input className='input'
-                                type="text" 
-                                id="note1" 
-                                name="note1" 
-                                placeholder="Бележка"
-                                value={formData.note1} 
-                                onChange={handleChange}
-                            />
-
-                            <input className='input'
-                                type="text" 
-                                id="note2" 
-                                name="note2" 
-                                placeholder="Бележка"
-                                value={formData.note2} 
-                                onChange={handleChange}
-                            />
-
-                            <input className='input'
-                                type="text" 
-                                id="note3" 
-                                name="note3" 
-                                placeholder="Бележка"
-                                value={formData.note3} 
-                                onChange={handleChange}
-                            />
-
-                            <input className='input'
-                                type="text" 
-                                id="note4" 
-                                name="note4" 
-                                placeholder="Бележка"
-                                value={formData.note4} 
-                                onChange={handleChange}
-                            />
-
-                            <input className='input'
-                                type="text" 
-                                id="note5" 
-                                name="note5" 
-                                placeholder="Бележка"
-                                value={formData.note5} 
-                                onChange={handleChange}
-                            />
-                        </div>
+                        {/* <label>Бележки</label> */}
+                        <textarea className='input textarea'
+                            type="text" 
+                            id="notes" 
+                            name="notes" 
+                            rows="7"
+                            placeholder="Бележки"
+                            value={formData.notes} 
+                            onChange={handleChange}
+                        />
 
                     </div>
                 </div>
+   
                 <div className='button-container'>
-                    <button className='form-button' type="submit">Submit</button>
                     <button className='form-button' onClick={reset}>Reset</button>
+                    <button className='form-button' type="submit">Submit</button>
                 </div>
             </form>
+            <section className='result-section'>
+                <h1 className='result-heading'>JSON</h1>
+                <pre className='result-text'>{text}</pre>
+            </section>
         </div>
     )
 }
