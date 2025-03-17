@@ -1,27 +1,30 @@
-import '../../SharedCSS/Card.css'
+import '../Books/BookCard.css'
 
 const BookCard = (props) => {
 
     return (
-        <article className="card">
-            <div className="card-image-wrapper">
-                <img className="card-image book-card-image" src={props.url} alt=""/>
+        <article className="book-card">
+            <div className="book-card-image-wrapper">
+                <img className="book-card-image" src={props.url} alt=""/>
             </div>
-            <div className="card-subcategory-wrapper">
-                    <p className="card-subcategory"><span className='card-subcategory-span'>{props.subcategory}</span></p>
+
+            <div className="book-card-all-content-wrapper">
+                <div className="book-card-subcategory-wrapper">
+                    <p className="book-card-subcategory"><span className='book-card-subcategory-span'>{props.subcategory}</span></p>
                 </div>
-            <div className="card-content-wrapper">
-                <div className="card-date-wrapper">
-                    <p className="card-date">{props.date}</p>
-                </div>
-                <div className="card-title-wrapper">
-                    <h3 className="card-title">{props.title}</h3>
-                </div>
-                <div className="card-text-wrapper">
-                    <p className="card-text">{props.content.substring(0, 130) + "..."}</p>
-                </div>
-                <div className="card-button-wrapper">
-                    <div className="card-fake-button">Виж &gt;&gt;</div>
+                <div className='book-card-content-wrapper'>
+                    <div className="book-card-date-wrapper">
+                        <p className="book-card-date">{props.date}</p>
+                    </div>
+                    <div className="book-card-title-wrapper">
+                        <h3 className="book-card-title">{props.title}</h3>
+                    </div>
+                    <div className="book-card-text-wrapper">
+                        <p className="book-card-text">{props.content.substring(0, 130) + "..."}</p>
+                    </div>
+                    <div className="book-card-button-wrapper">
+                        <div className="book-card-fake-button">Виж &gt;&gt;</div>
+                    </div>
                 </div>
             </div>
         </article>

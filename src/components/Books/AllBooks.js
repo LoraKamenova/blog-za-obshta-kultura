@@ -2,7 +2,7 @@ import { React, Component } from 'react';
 import { Link } from "react-router-dom";
 import data from '../../assets/data.json';
 import BookCard from '../Books/BookCard';
-import '../../SharedCSS/AllPosts.css';
+import '../Books/AllBooks.css';
 
 class AllBooks extends Component {
 
@@ -13,36 +13,36 @@ class AllBooks extends Component {
         let reversedBooks = books.reverse();
 
         return (
-            <section className="all-posts-page">
-                <section className='subcategories'>
-                    <ul className='subcategories-list'>
-                        <Link className='subcategory-link' to={`/books/fiction`}>
-                            <li className='subcategory-item'>Художествени</li>
+            <section className="all-books-page">
+                <section className='books-subcategories'>
+                    <ul className='books-subcategories-list'>
+                        <Link className='books-subcategory-link' to={`/books/fiction`}>
+                            <li className='books-subcategory-item'>Художествени</li>
                         </Link>
-                        <Link className='subcategory-link' to={`/books/non-fiction`}>
-                            <li className='subcategory-item'>Нехудожествени</li>
+                        <Link className='books-subcategory-link' to={`/books/non-fiction`}>
+                            <li className='books-subcategory-item'>Нехудожествени</li>
                         </Link>
-                        <Link className='subcategory-link' to={`/books/economics`}>
-                            <li className='subcategory-item'>Икономика</li>
+                        <Link className='books-subcategory-link' to={`/books/economics`}>
+                            <li className='books-subcategory-item'>Икономика</li>
                         </Link>
-                        <Link className='subcategory-link' to={`/books/bio`}>
-                            <li className='subcategory-item'>Биографии</li>
+                        <Link className='books-subcategory-link' to={`/books/bio`}>
+                            <li className='books-subcategory-item'>Биографии</li>
                         </Link>
-                        <Link className='subcategory-link' to={`/books/guides`}>
-                            <li className='subcategory-item'>Пътуване</li>
+                        <Link className='books-subcategory-link' to={`/books/guides`}>
+                            <li className='books-subcategory-item'>Пътуване</li>
                         </Link>
-                        <Link className='subcategory-link' to={`/books/sofia`}>
-                            <li className='subcategory-item'>София</li>
+                        <Link className='books-subcategory-link' to={`/books/sofia`}>
+                            <li className='books-subcategory-item'>София</li>
                         </Link>
-                        <Link className='subcategory-link' to={`/books/sofia`}>
-                            <li className='subcategory-item'>Списания</li>
+                        <Link className='books-subcategory-link' to={`/books/sofia`}>
+                            <li className='books-subcategory-item'>Списания</li>
                         </Link>
                     </ul>
                 </section>
-                <h1 className='all-posts-heading'>Всички книги</h1>
-                <section className='all-posts-container'>
+                <h1 className='all-books-heading'>Всички книги</h1>
+                <section className='all-books-container'>
                     {reversedBooks.map((x) => (
-                        <Link className='all-posts-link' key={x._id} {...x} to={`/books/${x._id}`}>
+                        <Link className='all-books-link' key={x._id} {...x} to={`/books/${x._id}`}>
                             <BookCard title={x.title}
                             content={x.content}
                             url={x.url}
