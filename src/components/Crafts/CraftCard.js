@@ -1,27 +1,27 @@
-import '../../SharedCSS/Card.css'
+import '../Crafts/CraftCard.css'
 
 const CraftCard = (props) => {
 
     return (
-        <article className="card">
-            <div className="card-image-wrapper">
-                <img className="card-image craft-card-image" src={props.url} alt=""/>
+        <article className="craft-card">
+            <div className="craft-card-image-wrapper">
+                <img className="craft-card-image" src={props.url} alt=""/>
             </div>
             {/* <div className="card-subcategory-wrapper">
                     <p className="card-subcategory"><span className='card-subcategory-span'>{props.subcategory}</span></p>
                 </div> */}
-            <div className="card-content-wrapper">
-                <div className="card-date-wrapper">
-                    <p className="card-date">{props.date}</p>
+            <div className="craft-card-content-wrapper">
+                <div className="craft-card-date-wrapper">
+                    <p className="craft-card-date">{props.date}</p>
                 </div>
-                <div className="card-title-wrapper">
-                    <h3 className="card-title">{props.title}</h3>
+                <div className="craft-card-title-wrapper">
+                    <h3 className="craft-card-title">{props.title}</h3>
                 </div>
-                <div className="card-text-wrapper">
-                    <p className="card-text">{props.content.substring(0, 130) + "..."}</p>
+                <div className="craft-card-text-wrapper">
+                    <p className="craft-card-text">{props.content.substring(0, 130) + "..."}</p>
                 </div>
-                <div className="card-button-wrapper">
-                    <div className="card-fake-button">Виж &gt;&gt;</div>
+                <div className="craft-card-button-wrapper">
+                    <div className="craft-card-fake-button">Виж &gt;&gt;</div>
                 </div>
             </div>
         </article>

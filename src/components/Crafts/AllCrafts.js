@@ -2,7 +2,7 @@ import { React, Component } from 'react';
 import { Link } from "react-router-dom";
 import data from '../../assets/data.json';
 import CraftCard from './CraftCard';
-import '../../SharedCSS/AllPosts.css';
+import '../Crafts/AllCrafts.css';
 
 class AllCrafts extends Component {
 
@@ -12,11 +12,11 @@ class AllCrafts extends Component {
         let reversedCrafts = crafts.reverse();
 
         return (
-            <section className="all-posts-page">
-                <h1 className='all-posts-heading'>Всички статии</h1>
-                <div className='all-posts-container'>
+            <section className="all-crafts-page">
+                <h1 className='all-crafts-heading'>Всички статии</h1>
+                <div className='all-crafts-container'>
                     {reversedCrafts.map((x) => (
-                        <Link className='all-posts-link' key={x._id} {...x} to={`/crafts/${x._id}`}>
+                        <Link className='all-crafts-link' key={x._id} {...x} to={`/crafts/${x._id}`}>
                             <CraftCard title={x.title}
                             content={x.content}
                             url={x.url}

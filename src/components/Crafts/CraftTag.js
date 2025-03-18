@@ -2,7 +2,7 @@ import { React } from 'react';
 import { Link, useLocation } from "react-router-dom";
 import data from '../../assets/data.json';
 import CraftCard from './CraftCard';
-import '../../SharedCSS/AllPosts.css';
+import '../Crafts/AllCrafts.css';
 
 const BookTag = () => { 
 const location = useLocation();
@@ -12,11 +12,11 @@ const location = useLocation();
 
     return (
 
-        <section className="all-posts-page">
-            <h1 className='all-posts-heading'>Статии с етикет "{location.state.tag}"</h1>
-            <section className='all-posts-container'>
+        <section className="all-crafts-page">
+            <h1 className='all-crafts-heading'>Статии с етикет "{location.state.tag}"</h1>
+            <section className='all-crafts-container'>
                 {crafts.map((x) => (
-                    <Link className='all-posts-link' key={x._id} {...x} to={`/crafts/${x._id}`}>
+                    <Link className='all-crafts-link' key={x._id} {...x} to={`/crafts/${x._id}`}>
                         <CraftCard title={x.title}
                         content={x.content}
                         url={x.url}
