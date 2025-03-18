@@ -29,6 +29,7 @@ import About from './components/About/About';
 import './App.css';
 import Admin from './components/Admin/Admin';
 import RecipeForm from './components/Admin/RecipeForm';
+import BookForm from './components/Admin/BookForm';
 
 function App() {
   return (
@@ -64,10 +65,11 @@ function App() {
         <Route path="/books/:id" element={<BookWrapper/>}/>
         <Route path="/books/fiction" element={<BookSubcategory subcategory="Художествена литература"/>}/>
         <Route path="/books/non-fiction" element={<BookSubcategory subcategory="Нехудожествена литература"/>}/>
-        <Route path="/books/economics" element={<BookSubcategory subcategory="Икономика"/>}/>
+        <Route path="/books/economics" element={<BookSubcategory subcategory="Икономически"/>}/>
         <Route path="/books/bio" element={<BookSubcategory subcategory="Биографии"/>}/>
         <Route path="/books/guides" element={<BookSubcategory subcategory="Пътиване"/>}/>
         <Route path="/books/sofia" element={<BookSubcategory subcategory="София"/>}/>
+        <Route path="/books/collections" element={<BookSubcategory subcategory="Колекции"/>}/>
         <Route path="/books/magazines" element={<BookSubcategory subcategory="Списания"/>}/>
         <Route path="/books/tags" element={<BookTag/>}/>
 
@@ -82,7 +84,7 @@ function App() {
         <Route path="/admn" element={<Admin/>}/>
         <Route path="/admn/post" element={<Admin/>}/>
         <Route path="/admn/recipe" element={<RecipeForm/>}/>
-        <Route path="/admn/book" element={<Admin/>}/>
+        <Route path="/admn/book" element={<BookForm/>}/>
         <Route path="/admn/craft" element={<Admin/>}/>
         <Route path="/admn/word" element={<Admin/>}/>
      </Routes>

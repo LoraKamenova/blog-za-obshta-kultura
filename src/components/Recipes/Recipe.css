@@ -97,7 +97,7 @@
     color: rgb(227, 11, 92);
 }
 
-.book-tag-container {
+.recipe-tag-container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -107,7 +107,7 @@
     padding: 15px 0;
 }
 
-.book-tag-link {
+.recipe-tag-link {
     display: flex;
     align-self: flex-end;
     justify-content: center;
@@ -121,13 +121,13 @@
     background-color: whitesmoke;
 }
 
-.bool-tag-link:hover {
+.recipe-tag-link:hover {
     background-color: rgb(227, 11, 92);
     color: white;
     outline: 1px solid rgb(227, 11, 92);
 }
 
-.book-tag-span {
+.recipe-tag-span {
     text-transform: capitalize;
     /* font-weight: bold; */
     font-size: 20px;

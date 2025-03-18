@@ -23,7 +23,7 @@ class AllBooks extends Component {
                             <li className='books-subcategory-item'>Нехудожествени</li>
                         </Link>
                         <Link className='books-subcategory-link' to={`/books/economics`}>
-                            <li className='books-subcategory-item'>Икономика</li>
+                            <li className='books-subcategory-item'>Икономически</li>
                         </Link>
                         <Link className='books-subcategory-link' to={`/books/bio`}>
                             <li className='books-subcategory-item'>Биографии</li>
@@ -34,7 +34,10 @@ class AllBooks extends Component {
                         <Link className='books-subcategory-link' to={`/books/sofia`}>
                             <li className='books-subcategory-item'>София</li>
                         </Link>
-                        <Link className='books-subcategory-link' to={`/books/sofia`}>
+                        <Link className='books-subcategory-link' to={`/books/collections`}>
+                            <li className='books-subcategory-item'>Колекции</li>
+                        </Link>
+                        <Link className='books-subcategory-link' to={`/books/magazines`}>
                             <li className='books-subcategory-item'>Списания</li>
                         </Link>
                     </ul>

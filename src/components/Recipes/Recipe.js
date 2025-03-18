@@ -51,9 +51,9 @@ class Recipe extends Component {
                 )
             }})()}
 
-        <div className='book-tag-container'>
-          <span className='book-tag-span'>Етикети:</span>
-          {obj.tags.map((x) => (<Link className='book-tag-link' to={`/recipes/tags`} state={{tag: `${x}`}}>{x}</Link>))}
+        <div className='recipe-tag-container'>
+          <span className='recipe-tag-span'>Етикети:</span>
+          {obj.tags.map((x) => (<Link className='recipe-tag-link' to={`/recipes/tags`} state={{tag: `${x}`}}>{x}</Link>))}
         </div>
       </div>
     )
