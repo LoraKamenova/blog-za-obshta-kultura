@@ -126,3 +126,42 @@
     width: 120px;
     text-align: left;
 }
+
+.word-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+}
+
+.word-form-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.word-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+}
+
+.word-result-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    width: 50%;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-top: 60px;
+}
