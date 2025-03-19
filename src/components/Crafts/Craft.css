@@ -103,7 +103,7 @@
     align-items: flex-start;
 }
 
-.fas.fa-tools, .fas.fa-shopping-basket, .fas.fa-lightbulb {
+.fas.fa-cut, .fas.fa-shopping-cart, .fas.fa-tag {
     font-size: 1rem;
     color: rgb(227, 11, 92);
 }
@@ -114,7 +114,7 @@
     align-items: center;
     width: 60%;
     border-top: 1px solid black;
-    margin-top: 15px;
+    margin-top: 10px;
     padding: 15px 0;
 }
 

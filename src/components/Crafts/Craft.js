@@ -24,18 +24,18 @@ class Craft extends Component {
               </div>
               <div className='craft-materials-container'>
                 <h3>Необходими материали:</h3>
-                <ul className='craft-ul'>{post.materials.map((material => (<li className='craft-li'><i class="fas fa-shopping-basket"></i> {material}</li>)))}</ul>
+                <ul className='craft-ul'>{post.materials.map((material => (<li className='craft-li'><i class="fas fa-shopping-cart"></i> {material}</li>)))}</ul>
               </div>
             </div>
 
             <div className='craft-steps-container'>
               <h3>Стъпки на изпълнение:</h3>
-              <ul className='craft-ul'>{post.steps.map((step => (<li className='craft-li'><i class="fas fa-tools"></i> {step}</li>)))}</ul>
+              <ul className='craft-ul'>{post.steps.map((step => (<li className='craft-li'><i class="fas fa-cut"></i> {step}</li>)))}</ul>
             </div>
        
             <div className='craft-notes-container'>
               <h3>Бележки:</h3>
-              <ul className='craft-ul'>{post.notes.map((note => (<li className='craft-li'><i class="fas fa-lightbulb"></i> {note}</li>)))}</ul>
+              <ul className='craft-ul'>{post.notes.map((note => (<li className='craft-li'><i class="fas fa-tag"></i> {note}</li>)))}</ul>
             </div>
         </div>
         <div className='craft-tag-container'>

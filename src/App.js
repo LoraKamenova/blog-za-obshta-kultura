@@ -30,6 +30,7 @@ import './App.css';
 import Admin from './components/Admin/Admin';
 import RecipeForm from './components/Admin/RecipeForm';
 import BookForm from './components/Admin/BookForm';
+import CraftForm from './components/Admin/CraftForm';
 
 function App() {
   return (
@@ -85,7 +86,7 @@ function App() {
         <Route path="/admn/post" element={<Admin/>}/>
         <Route path="/admn/recipe" element={<RecipeForm/>}/>
         <Route path="/admn/book" element={<BookForm/>}/>
-        <Route path="/admn/craft" element={<Admin/>}/>
+        <Route path="/admn/craft" element={<CraftForm/>}/>
         <Route path="/admn/word" element={<Admin/>}/>
      </Routes>
     </div>
