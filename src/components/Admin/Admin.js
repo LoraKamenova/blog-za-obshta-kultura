@@ -13,23 +13,23 @@ class Admin extends Component {
                     <div className='first-row'>
                         <div className='first-row-left'>Админ панел</div>
                         <div className='first-row-right'>
-                            <Link className='form-link upper' to={`/admn/post`}>
-                                <div className='form-item'>Статия</div>
+                            <Link className='form-link lower' to={`/admn/word`}>
+                                <div className='form-item'>Дума</div>
                             </Link>
-                            <Link className='form-link upper' to={`/admn/recipe`}>
-                                <div className='form-item'>Рецепта</div>
+                            <Link className='form-link lower' to={`/admn/craft`}>
+                                <div className='form-item'>DIY</div>
                             </Link>
                         </div>
                     </div>
                     <div className='second-row'>
+                    <   Link className='form-link upper' to={`/admn/post`}>
+                            <div className='form-item'>Статия</div>
+                        </Link>
+                        <Link className='form-link upper' to={`/admn/recipe`}>
+                            <div className='form-item'>Рецепта</div>
+                        </Link>
                         <Link className='form-link lower' to={`/admn/book`}>
                             <div className='form-item'>Книга</div>
-                        </Link>
-                        <Link className='form-link lower' to={`/admn/craft`}>
-                            <div className='form-item'>DIY</div>
-                        </Link>
-                        <Link className='form-link lower' to={`/admn/word`}>
-                            <div className='form-item'>Дума</div>
                         </Link>
                     </div>
                 </section>
