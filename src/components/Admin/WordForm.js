@@ -56,25 +56,25 @@ const CraftForm = (props) => {
                         value={formData.word} 
                         onChange={handleChange}
                     />
-            
-                    <textarea className='input textarea'
-                        id="description" 
-                        name="description" 
-                        placeholder="Описание"
-                        rows="3"
-                        value={formData.description} 
-                        onChange={handleChange}
-                    />
 
                     <textarea className='input textarea'
                         id="comment" 
                         name="comment" 
                         placeholder="Коментар"
-                        rows="10"
+                        rows="3"
                         value={formData.comment} 
                         onChange={handleChange}
                     />
-   
+            
+                    <textarea className='input textarea'
+                        id="description" 
+                        name="description" 
+                        placeholder="Описание"
+                        rows="10"
+                        value={formData.description} 
+                        onChange={handleChange}
+                    />
+
                 <div className='button-container'>
                     <button className='form-button' onClick={reset}>Reset</button>
                     <button className='form-button' type="submit">Submit</button>
