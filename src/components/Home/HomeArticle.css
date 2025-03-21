@@ -6,3 +6,25 @@
     padding: 1em 3em;
     font-family: 'Trebuchet MS', sans-serif;
 }
+
+.home-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    width: 100%;
+}
+
+.home-article-heading {
+    margin-bottom: 20px;
+    font-size: 3em;
+    font-style: italic;
+    text-align: center;
+}
+
+.home-article-paragraph {
+    font-style: italic;
+    text-align: center;
+ }

@@ -2,7 +2,7 @@ import { React } from 'react';
 import { Link } from "react-router-dom";
 import data from '../../assets/data.json';
 import ArticleCard from './ArticleCard';
-import '../../SharedCSS/AllPosts.css';
+import './AllArticles.css';
 
 const ArticleSubcategory = (props) => { 
 
@@ -10,11 +10,11 @@ const ArticleSubcategory = (props) => {
     let reversedArticles = articles.reverse();
     return (
 
-        <section className="all-posts-page">
-            <h1 className='all-posts-heading'>Поредица "{props.subcategory}"</h1>
-            <section className='all-posts-container'>
+        <section className="all-articles-page">
+            <h1 className='all-articles-heading'>Поредица "{props.subcategory}"</h1>
+            <section className='all-articles-container'>
                 {reversedArticles.map((x) => (
-                    <Link className='all-posts-link' key={x._id} {...x} to={`/articles/${x._id}`}>
+                    <Link className='all-articles-link' key={x._id} {...x} to={`/articles/${x._id}`}>
                         <ArticleCard title={x.title}
                         content={x.content}
                         url={x.url}

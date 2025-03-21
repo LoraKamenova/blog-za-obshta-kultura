@@ -1,4 +1,4 @@
-.post-page {
+/* .post-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,8 +19,6 @@
     font-family: 'Trebuchet MS', sans-serif;
     width: 70%;
 }
-
-/* Tags */
 
 .tag-container {
     display: flex;
@@ -54,11 +52,8 @@
 
 .tag-span {
     text-transform: capitalize;
-    /* font-weight: bold; */
     font-size: 20px;
 }
-
-/* --------------------- */
 
 .post-markdown {
     display: flex;
@@ -136,7 +131,6 @@ img[alt="long"] {
 
 .markdown-book-li {
     list-style-type: none;
-    /* margin-left: 20px; */
 }
 
 .markdown-link {
@@ -168,15 +162,4 @@ img[alt="long"] {
     text-align: left;
     width: 100%;
     margin: 20px 0;
-}
-
-/* RECIPE--------------------- */
-
-/* .post-markdown {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: whitesmoke;
-    color: black;
 } */

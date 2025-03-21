@@ -2,7 +2,7 @@ import { React, Component } from 'react';
 import { Link } from "react-router-dom";
 import data from '../../assets/data.json';
 import ArticleCard from '../Articles/ArticleCard';
-import '../../SharedCSS/AllPosts.css';
+import '../Articles/AllArticles.css';
 
 class AllArticles extends Component {
 
@@ -12,7 +12,7 @@ class AllArticles extends Component {
         let reversedArticles = articles.reverse();
 
         return (
-            <section className="all-posts-page">
+            <section className="all-articles-page">
                 <section className='sub-articles-container'>
                     <Link className='sub-articles-link' to={`/articles/architecture`}>
                         <div className='sub-articles-item'>
@@ -96,10 +96,10 @@ class AllArticles extends Component {
                         </div>
                     </Link>
                 </section>
-                <h1 className='all-posts-heading'>Всички статии</h1>
-                <section className='all-posts-container'>
+                <h1 className='all-articles-heading'>Всички статии</h1>
+                <section className='all-articles-container'>
                     {reversedArticles.map((x) => (
-                        <Link className='all-posts-link' key={x._id} {...x} to={`/articles/${x._id}`}>
+                        <Link className='all-articles-link' key={x._id} {...x} to={`/articles/${x._id}`}>
                             <ArticleCard title={x.title}
                             content={x.content}
                             url={x.url}

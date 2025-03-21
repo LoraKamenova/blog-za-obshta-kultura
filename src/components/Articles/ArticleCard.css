@@ -1,4 +1,4 @@
-/* .card {
+.article-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,31 +10,27 @@
     margin: 10px;
 }
 
-.card-image-wrapper {
+.article-card-image-wrapper {
     width: 100%;
     height: 200px;
 }
 
-.card-image {
+.article-card-image {
     width: 100%;
     height: 100%;
 }
 
-.recipe-card-image, .book-card-image, .craft-card-image {
-    object-fit: cover;
-}
-
-.card-subcategory-wrapper {
+.article-card-subcategory-wrapper {
     margin-top: 5px;
 }
 
-.card-subcategory-span {
+.article-card-subcategory-span {
     background-color: rgb(227, 11, 92);
     padding: 5px 10px;
     color: white;
 }
 
-.card-content-wrapper {
+.article-card-content-wrapper {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
@@ -42,8 +38,8 @@
     padding: 20px;
 }
 
-.card-button-wrapper {
+.article-card-button-wrapper {
     display: flex;
     justify-content: flex-end;
     color: rgb(227, 11, 92);
-} */
+}
