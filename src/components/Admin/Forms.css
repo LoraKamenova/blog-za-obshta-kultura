@@ -118,12 +118,18 @@
     justify-content: center;
 }
 
+
 .select-label {
     margin-right: 10px;
 }
 
 .select-option {
     width: 120px;
+    text-align: left;
+}
+
+.select-article-option {
+    width: 200px;
     text-align: left;
 }
 

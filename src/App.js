@@ -28,6 +28,7 @@ import About from './components/About/About';
 
 import './App.css';
 import Admin from './components/Admin/Admin';
+import ArticleForm from './components/Admin/ArticleForm';
 import RecipeForm from './components/Admin/RecipeForm';
 import BookForm from './components/Admin/BookForm';
 import CraftForm from './components/Admin/CraftForm';
@@ -84,7 +85,7 @@ function App() {
         <Route path="/about" element={<About/>}/>
 
         <Route path="/admn" element={<Admin/>}/>
-        <Route path="/admn/post" element={<Admin/>}/>
+        <Route path="/admn/post" element={<ArticleForm/>}/>
         <Route path="/admn/recipe" element={<RecipeForm/>}/>
         <Route path="/admn/book" element={<BookForm/>}/>
         <Route path="/admn/craft" element={<CraftForm/>}/>
