@@ -11,7 +11,7 @@ const Sections = (props) => {
                     <p className='post-caption'>{props.data.caption}</p>
                 )
             }})()}
-            <p className='post-caption'>{props.data.caption}</p>
+            {/* <p className='post-caption'>{props.data.caption}</p> */}
             <div>{props.data.content.map(paragraph => (<p className='post-paragraph'>{paragraph}</p>))}</div>
       </section>
      );
